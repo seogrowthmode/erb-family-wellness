@@ -573,11 +573,8 @@ export default async function ConditionPage({ params }: Props) {
       {/* APPROACH */}
       <section className="page-section page-section--white">
         <div className="container-erb">
-          <div className="split split--45-55">
+          <div className="split split--55-45">
             <RevealOnScroll>
-              <FormCard subtitle={condition.formSubtitle} />
-            </RevealOnScroll>
-            <RevealOnScroll delay={150}>
               <span className="label">{condition.approachLabel}</span>
               <h2 className="section-headline" style={{ marginBottom: 28 }}>
                 <span className="light">{condition.approachHeadlineLight}</span>
@@ -591,6 +588,9 @@ export default async function ConditionPage({ params }: Props) {
                   <p key={i} style={{ fontSize: 16, color: "var(--color-text-secondary)", lineHeight: 1.75, marginBottom: 20 }}>{p}</p>
                 ))}
               </div>
+            </RevealOnScroll>
+            <RevealOnScroll delay={150}>
+              <FormCard subtitle={condition.formSubtitle} />
             </RevealOnScroll>
           </div>
         </div>

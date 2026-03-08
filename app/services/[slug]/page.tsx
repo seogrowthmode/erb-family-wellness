@@ -741,11 +741,8 @@ export default async function ServicePage({ params }: Props) {
       {/* OVERVIEW */}
       <section className="page-section page-section--cream">
         <div className="container-erb">
-          <div className="split split--45-55">
+          <div className="split split--55-45">
             <RevealOnScroll>
-              <FormCard subtitle={service.formSubtitle} submitText={service.formSubmitText} />
-            </RevealOnScroll>
-            <RevealOnScroll delay={150}>
               <span className="label">{service.label}</span>
               <h2 className="section-headline">
                 <span className="light">{service.headlineLight}</span>
@@ -757,6 +754,9 @@ export default async function ServicePage({ params }: Props) {
                 ))}
               </div>
               <div className="img-placeholder img-placeholder--tall">{service.imagePlaceholder}</div>
+            </RevealOnScroll>
+            <RevealOnScroll delay={150}>
+              <FormCard subtitle={service.formSubtitle} submitText={service.formSubmitText} />
             </RevealOnScroll>
           </div>
         </div>

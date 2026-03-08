@@ -130,13 +130,8 @@ export default function HomePage() {
       {/* FORM SECTION */}
       <section style={{ padding: "100px 0 120px", background: "var(--color-cream)" }} id="form-section">
         <div className="container-erb">
-          <div style={{ display: "grid", gridTemplateColumns: "45fr 55fr", gap: 80, alignItems: "start" }} className="split--responsive">
+          <div style={{ display: "grid", gridTemplateColumns: "55fr 45fr", gap: 80, alignItems: "start" }} className="split--responsive">
             <RevealOnScroll>
-              <div style={{ marginTop: -60, position: "relative", zIndex: 11 }}>
-                <FormCard />
-              </div>
-            </RevealOnScroll>
-            <RevealOnScroll delay={200}>
               <div style={{ paddingTop: 20 }}>
                 <span className="label">Why Erb Family Wellness</span>
                 <div style={{ marginBottom: 32, lineHeight: 1.15 }}>
@@ -161,6 +156,11 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p style={{ fontSize: 13, color: "var(--color-text-secondary)" }}>306+ Google reviews &middot; 4.8 stars &middot; CareCredit accepted</p>
+              </div>
+            </RevealOnScroll>
+            <RevealOnScroll delay={200}>
+              <div style={{ marginTop: -60, position: "relative", zIndex: 11 }}>
+                <FormCard />
               </div>
             </RevealOnScroll>
           </div>
