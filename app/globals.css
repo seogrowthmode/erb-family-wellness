@@ -160,6 +160,32 @@ a { text-decoration: none; color: inherit; }
 .nav--home .nav__link:hover { color: var(--color-cream); }
 .nav--home.scrolled .nav__link { color: var(--color-text-secondary); }
 .nav--home.scrolled .nav__link:hover { color: var(--color-navy); }
+.nav__dropdown { position: relative; }
+.nav__dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(14,24,44,.12);
+  padding: 12px 0;
+  min-width: 240px;
+  z-index: 1001;
+  margin-top: 12px;
+}
+.nav__dropdown-item {
+  display: block;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  transition: background .2s, color .2s;
+}
+.nav__dropdown-item:hover {
+  background: rgba(14,24,44,.04);
+  color: var(--color-navy);
+}
 .nav__right { display: flex; align-items: center; gap: 20px; }
 .nav__phone {
   font-size: 14px;
