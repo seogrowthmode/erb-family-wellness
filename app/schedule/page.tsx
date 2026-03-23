@@ -1,10 +1,16 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function SchedulePage() {
+  const router = useRouter();
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
   const handlePhoneFormat = (e: React.ChangeEvent<HTMLInputElement>) => {
     let val = e.target.value.replace(/\D/g, "");
     if (val.length > 10) val = val.slice(0, 10);
@@ -14,6 +20,43 @@ export default function SchedulePage() {
       e.target.value = `(${val.slice(0, 3)}) ${val.slice(3)}`;
     } else if (val.length >= 1) {
       e.target.value = `(${val}`;
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem("fname") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lname") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      location: (form.elements.namedItem("location") as HTMLSelectElement).value,
+      reason: (form.elements.namedItem("reason") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)?.value || "",
+      event_source_url: window.location.href,
+    };
+
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      if (result.ok && result.redirectPath) {
+        router.push(result.redirectPath);
+      } else {
+        setError(result.error || "Something went wrong. Please try again.");
+        setSubmitting(false);
+      }
+    } catch {
+      setError("Unable to submit. Please call us at (972) 393-6262.");
+      setSubmitting(false);
     }
   };
 
@@ -37,7 +80,10 @@ export default function SchedulePage() {
                   New Patient Special: <strong style={{ fontSize: 40 }}>$67</strong>
                 </p>
                 <p className="form-card__subtitle">Choose your location and preferred service below.</p>
-                <form onSubmit={(e) => e.preventDefault()}>
+                {error && (
+                  <p style={{ color: "#e53e3e", fontSize: 13, marginBottom: 12 }}>{error}</p>
+                )}
+                <form onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="fname">First Name</label>
@@ -108,7 +154,7 @@ export default function SchedulePage() {
                       <textarea id="message" placeholder="Anything we should know before your visit?" />
                     </div>
                   </div>
-                  <button type="submit" className="form-card__submit">Book My Appointment &rarr;</button>
+                  <button type="submit" className="form-card__submit" disabled={submitting}>{submitting ? "Booking..." : "Book My Appointment"} &rarr;</button>
                 </form>
                 <p className="form-card__note">CareCredit accepted &middot; Same-day availability &middot; We&rsquo;ll confirm within 2 hours</p>
               </div>

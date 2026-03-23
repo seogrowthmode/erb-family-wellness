@@ -54,7 +54,7 @@ export default function Header() {
             {servicesOpen && (
               <div className="nav__dropdown-menu">
                 {siteConfig.services.map((s) => (
-                  <Link key={s.slug} href={`/services/${s.slug}`} className="nav__dropdown-item" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
+                  <Link key={s.slug} href={"href" in s ? s.href : `/services/${s.slug}`} className="nav__dropdown-item" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
                     {s.name}
                   </Link>
                 ))}

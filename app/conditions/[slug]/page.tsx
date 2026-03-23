@@ -694,8 +694,8 @@ export default async function ConditionPage({ params }: Props) {
           <RevealOnScroll delay={100}>
             <div className="split split--50-50">
               {[
-                { badge: "Primary Location", name: "Coppell", addr: "255 S Denton Tap Rd Suite 200, Coppell TX 75019", hours: "Mon & Wed: 8:30am - 12pm, 2:30pm - 6pm\nTue & Thu: 2:30pm - 6pm\nFri: By appointment\nSat & Sun: Closed" },
-                { badge: "Second Location", name: "Southlake", addr: "1845 E Southlake Blvd Suite 140, Southlake TX 76092", hours: "Mon & Wed: 8:30am - 12pm, 2:30pm - 6pm\nTue & Thu: 2:30pm - 6pm\nFri: By appointment\nSat & Sun: Closed" },
+                { badge: "Primary Location", name: "Coppell", addr: "255 S Denton Tap Rd Suite 200, Coppell TX 75019", hours: "Mon & Wed: 8:00am - 10:30am, 3:30pm - 6:00pm\nTue: 12:00pm - 3:00pm\nThu: 2:30pm - 5:30pm\nFri: 7:30am - 10:30am\nSat & Sun: Closed" },
+                { badge: "Second Location", name: "Southlake", addr: "1845 E Southlake Blvd Suite 140, Southlake TX 76092", hours: "Mon & Wed: 8:00am - 10:30am, 3:30pm - 6:00pm\nTue: 12:00pm - 3:00pm\nThu: 2:30pm - 5:30pm\nFri: 7:30am - 10:30am\nSat & Sun: Closed" },
               ].map((loc) => (
                 <div key={loc.name} className="loc-card">
                   <p className="loc-card__badge">{loc.badge}</p>
