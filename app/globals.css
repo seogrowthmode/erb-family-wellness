@@ -131,9 +131,9 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 2px 20px rgba(14,24,44,.06);
 }
 .nav--home {
-  background: transparent;
-  backdrop-filter: none;
-  box-shadow: none;
+  background: rgba(241,236,232,.96);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 2px 20px rgba(14,24,44,.06);
 }
 .nav--home.scrolled {
   background: rgba(241,236,232,.96);
@@ -144,7 +144,7 @@ a { text-decoration: none; color: inherit; }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; }
 .nav__logo { font-size: 20px; font-weight: 700; color: var(--color-navy); transition: color .4s ease; }
 .nav__logo span { color: var(--color-teal); }
-.nav--home .nav__logo { color: var(--color-cream); }
+.nav--home .nav__logo { color: var(--color-navy); }
 .nav--home.scrolled .nav__logo { color: var(--color-navy); }
 .nav__links { display: flex; align-items: center; gap: 32px; }
 .nav__link {
@@ -154,11 +154,11 @@ a { text-decoration: none; color: inherit; }
   transition: color .3s ease;
 }
 .nav__link:hover { color: var(--color-navy); }
-.nav--home .nav__link { color: rgba(241,236,232,.85); }
-.nav--home .nav__link:hover { color: var(--color-cream); }
+.nav--home .nav__link { color: var(--color-text-secondary); }
+.nav--home .nav__link:hover { color: var(--color-navy); }
 .nav--home.scrolled .nav__link { color: var(--color-text-secondary); }
 .nav--home.scrolled .nav__link:hover { color: var(--color-navy); }
-.nav__dropdown { position: relative; }
+.nav__dropdown { position: relative; padding: 8px 0; }
 .nav__dropdown-menu {
   position: absolute;
   top: 100%;
@@ -170,7 +170,6 @@ a { text-decoration: none; color: inherit; }
   padding: 12px 0;
   min-width: 240px;
   z-index: 1001;
-  margin-top: 12px;
 }
 .nav__dropdown-item {
   display: block;
@@ -191,7 +190,7 @@ a { text-decoration: none; color: inherit; }
   color: var(--color-navy);
   transition: color .4s ease;
 }
-.nav--home .nav__phone { color: var(--color-cream); }
+.nav--home .nav__phone { color: var(--color-navy); }
 .nav--home.scrolled .nav__phone { color: var(--color-navy); }
 .nav__cta {
   font-size: 13px;
@@ -219,7 +218,7 @@ a { text-decoration: none; color: inherit; }
   border-radius: 2px;
   transition: all .3s;
 }
-.nav--home .nav__mobile-toggle span { background: var(--color-cream); }
+.nav--home .nav__mobile-toggle span { background: var(--color-navy); }
 .nav--home.scrolled .nav__mobile-toggle span { background: var(--color-navy); }
 
 @media (max-width: 968px) {

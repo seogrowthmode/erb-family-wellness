@@ -35,7 +35,7 @@ export default function HomePage() {
             style={{
               width: "100%",
               height: "100%",
-              background: "linear-gradient(135deg, #1a3a5c 0%, #2a5478 40%, #1a3a5c 100%)",
+              background: "linear-gradient(135deg, #0E182C 0%, #162240 40%, #0E182C 100%)",
             }}
           />
         </div>
