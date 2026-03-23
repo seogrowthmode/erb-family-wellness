@@ -2,6 +2,7 @@ import Link from "next/link";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import FormCard from "@/components/FormCard";
 import FAQ from "@/components/FAQ";
+import SchemaOrg from "@/components/SchemaOrg";
 
 const homeFAQs = [
   { question: "What's included in the $67 new patient visit?", answer: "Your $67 new patient visit includes a comprehensive consultation, examination, any necessary X-rays, and your first adjustment. Dr. Erb will identify the root cause of your health concerns — not just treat symptoms." },
@@ -27,6 +28,7 @@ const faqSchema = {
 export default function HomePage() {
   return (
     <>
+      <SchemaOrg />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* HERO */}
       <section className="hero">
@@ -54,10 +56,10 @@ export default function HomePage() {
           </div>
           <h1 style={{ marginBottom: 28, lineHeight: 1.05 }}>
             <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 48px)", fontWeight: 300, color: "var(--color-text-light)" }}>
-              The Greatest Place
+              Chiropractor in Coppell TX
             </span>
             <span style={{ display: "block", fontSize: "clamp(52px, 7vw, 80px)", fontWeight: 900, color: "var(--color-text-light)" }}>
-              of Hope
+              Hope
             </span>
             <span style={{ display: "block", fontSize: "clamp(52px, 7vw, 80px)", fontWeight: 900, color: "var(--color-teal)" }}>
               and Healing.
@@ -173,8 +175,8 @@ export default function HomePage() {
           <span className="label">We Understand</span>
           <RevealOnScroll>
             <h2 style={{ marginBottom: 20, lineHeight: 1.1 }}>
-              <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>You&apos;ve tried</span>
-              <span style={{ display: "block", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 700 }}>everything.</span>
+              <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>Chiropractic Care</span>
+              <span style={{ display: "block", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 700 }}>in Coppell TX</span>
             </h2>
           </RevealOnScroll>
           <RevealOnScroll delay={100}>
@@ -218,8 +220,8 @@ export default function HomePage() {
             <div style={{ marginBottom: 56 }}>
               <span className="label label--light">Technology No One Else Has</span>
               <h2 style={{ marginBottom: 16, lineHeight: 1.1 }}>
-                <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300, color: "var(--color-text-light)" }}>Welcome to</span>
-                <span style={{ display: "block", fontSize: "clamp(44px, 5vw, 60px)", fontWeight: 900, color: "var(--color-text-light)" }}>the future of healing.</span>
+                <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300, color: "var(--color-text-light)" }}>SoftWave &amp; HBOT</span>
+                <span style={{ display: "block", fontSize: "clamp(44px, 5vw, 60px)", fontWeight: 900, color: "var(--color-text-light)" }}>Therapy in Coppell TX</span>
               </h2>
               <p style={{ fontSize: 16, color: "rgba(241,236,232,.65)", maxWidth: 500, lineHeight: 1.7 }}>This is why patients travel from around the world.</p>
             </div>
@@ -264,15 +266,24 @@ export default function HomePage() {
           <span className="label">Complete Care</span>
           <RevealOnScroll>
             <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "36px 48px", marginBottom: 28 }}>
-              {["Spinal Correction", "HBOT", "SoftWave", "Thermography", "Blood Testing", "Neuropathy", "Pediatric", "Prenatal"].map((svc) => (
-                <Link key={svc} href="/services" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, transition: "transform .3s ease" }}>
+              {[
+                { name: "Spinal Correction", href: "/services/spinal-correction" },
+                { name: "HBOT", href: "/services/hbot" },
+                { name: "SoftWave", href: "/services/softwave" },
+                { name: "Thermography", href: "/services/thermography" },
+                { name: "Blood Testing", href: "/services/blood-microscopy" },
+                { name: "Neuropathy", href: "/services/neuropathy" },
+                { name: "Pediatric", href: "/services/pediatric" },
+                { name: "Prenatal", href: "/services/prenatal" },
+              ].map((svc) => (
+                <Link key={svc.name} href={svc.href} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, transition: "transform .3s ease" }}>
                   <div style={{ width: 56, height: 56, borderRadius: "50%", background: "rgba(42,125,108,.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--color-teal)" fill="none" strokeWidth="1.5">
                       <circle cx="12" cy="12" r="10" />
                       <path d="M12 8v8M8 12h8" />
                     </svg>
                   </div>
-                  <span style={{ fontSize: 13, fontWeight: 600, color: "var(--color-text-primary)", textAlign: "center" }}>{svc}</span>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: "var(--color-text-primary)", textAlign: "center" }}>{svc.name}</span>
                 </Link>
               ))}
             </div>
@@ -315,8 +326,8 @@ export default function HomePage() {
             <span className="label">Your Care Team</span>
             <RevealOnScroll>
               <h2 style={{ marginBottom: 16, lineHeight: 1.15 }}>
-                <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>A 28-year journey</span>
-                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 52px)", fontWeight: 700 }}>of hope and healing.</span>
+                <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>Spinal Correction</span>
+                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 52px)", fontWeight: 700 }}>Specialists in Coppell TX</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -406,9 +417,8 @@ export default function HomePage() {
             <span className="label">Patient Stories</span>
             <RevealOnScroll>
               <h2 style={{ lineHeight: 1.1, marginBottom: 16 }}>
-                <span style={{ display: "block", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 300 }}>20-year patients.</span>
-                <span style={{ display: "block", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 300 }}>Olympic athletes.</span>
-                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 900, color: "var(--color-teal)" }}>Families who trust us.</span>
+                <span style={{ display: "block", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 300 }}>Neuropathy &amp; Wellness</span>
+                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 900, color: "var(--color-teal)" }}>Treatment in Coppell TX</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -444,8 +454,8 @@ export default function HomePage() {
             <span className="label">Your Healing Journey</span>
             <RevealOnScroll>
               <h2 style={{ marginBottom: 16, lineHeight: 1.15 }}>
-                <span className="title-light">Three steps to</span>
-                <span className="title-heavy">extraordinary health.</span>
+                <span className="title-light">Pediatric &amp; Prenatal</span>
+                <span className="title-heavy">Chiropractic in Coppell TX</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -493,8 +503,8 @@ export default function HomePage() {
               <span className="label">Common Questions</span>
               <RevealOnScroll>
                 <h2 style={{ lineHeight: 1.15, marginBottom: 16 }}>
-                  <span className="title-light">Your questions,</span>
-                  <span className="title-heavy">answered.</span>
+                  <span className="title-light">Spinal Decompression &amp;</span>
+                  <span className="title-heavy">Thermography Coppell TX</span>
                 </h2>
               </RevealOnScroll>
               <RevealOnScroll delay={100}>

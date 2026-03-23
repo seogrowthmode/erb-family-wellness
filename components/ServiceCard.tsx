@@ -20,7 +20,7 @@ export default function ServiceCard({ name, title, description, href, imagePlace
         <p className="svc-card__name">{name}</p>
         <h3 className="svc-card__title">{title}</h3>
         <p className="svc-card__desc">{description}</p>
-        <span className="svc-card__link">Learn more &rarr;</span>
+        <span className="svc-card__link">{title} &rarr;</span>
       </div>
     </Link>
   );

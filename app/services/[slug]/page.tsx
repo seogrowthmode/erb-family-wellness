@@ -41,11 +41,11 @@ const servicesData: ServiceData[] = [
   {
     slug: "hbot",
     name: "Hyperbaric Oxygen Therapy",
-    heroLight: "Hyperbaric Oxygen",
-    heroHeavy: "Therapy",
+    heroLight: "Hyperbaric Oxygen Therapy",
+    heroHeavy: "in Coppell TX",
     heroSub: "800% stem cell growth. Neurological recovery. Cellular regeneration. The most advanced healing technology in DFW.",
-    metaTitle: "Hyperbaric Oxygen Therapy (HBOT) — Coppell & Southlake, TX",
-    metaDesc: "800% stem cell growth. Neurological recovery. Cellular regeneration. Experience Hyperbaric Oxygen Therapy at Erb Family Wellness — the most advanced healing technology in DFW.",
+    metaTitle: "HBOT Coppell TX",
+    metaDesc: "Hyperbaric oxygen therapy in Coppell TX. 800% stem cell growth, neurological recovery & cellular regeneration. Call (972) 393-6262.",
     stats: ["800% Stem Cell Growth", "~100% Oxygen", "Non-Invasive"],
     label: "ABOUT HBOT",
     headlineLight: "Welcome to",
@@ -96,10 +96,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "softwave",
     name: "SoftWave Therapy",
-    heroLight: "SoftWave Tissue",
-    heroHeavy: "Regeneration Therapy",
+    heroLight: "SoftWave Therapy",
+    heroHeavy: "Coppell TX",
     heroSub: "FDA-cleared shockwave technology that activates your body's stem cells, reduces inflammation, and accelerates healing — without surgery or injections.",
-    metaTitle: "SoftWave Therapy Coppell TX | Erb Family Wellness",
+    metaTitle: "SoftWave Therapy Coppell TX",
     metaDesc: "SoftWave tissue regeneration therapy in Coppell TX. Activate stem cells, reduce pain without surgery. Call (972) 393-6262.",
     stats: ["Stem Cell Activation", "FDA-Cleared", "No Downtime"],
     label: "ABOUT SOFTWAVE",
@@ -153,10 +153,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "thermography",
     name: "Digital Thermography",
-    heroLight: "Digital",
-    heroHeavy: "Thermography",
+    heroLight: "Digital Thermography",
+    heroHeavy: "in Coppell TX",
     heroSub: "AlfaSight 9000 120-point body mapping. See inflammation, nerve dysfunction, and hidden health patterns before symptoms appear.",
-    metaTitle: "Thermography Coppell TX | Erb Family Wellness",
+    metaTitle: "Thermography Coppell TX",
     metaDesc: "AlfaSight 9000 digital thermography in Coppell TX. 120-point body mapping reveals hidden dysfunction. Call (972) 393-6262.",
     stats: ["120 Data Points", "Non-Invasive", "Zero Radiation"],
     label: "ABOUT THERMOGRAPHY",
@@ -209,10 +209,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "blood-microscopy",
     name: "Live Blood Microscopy",
-    heroLight: "Live Blood",
-    heroHeavy: "Microscopy",
+    heroLight: "Live Blood Microscopy",
+    heroHeavy: "in Coppell TX",
     heroSub: "One drop of blood. Thousands of answers. See your cellular health in real time under a darkfield microscope.",
-    metaTitle: "Blood Microscopy Coppell TX | Erb Family Wellness",
+    metaTitle: "Blood Microscopy Coppell TX",
     metaDesc: "Live blood microscopy & cellular health analysis in Coppell TX. See your blood cells in real time. Call (972) 393-6262.",
     stats: ["Real-Time Analysis", "Single Drop", "Darkfield Microscope"],
     label: "ABOUT BLOOD MICROSCOPY",
@@ -265,10 +265,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "spinal-correction",
     name: "Spinal Correction",
-    heroLight: "Advanced Corrective",
-    heroHeavy: "Chiropractic",
+    heroLight: "Spinal Correction",
+    heroHeavy: "Coppell TX",
     heroSub: "Not just pain relief. Structural correction that restores your spine to its optimal alignment — the foundation of everything we do.",
-    metaTitle: "Spinal Correction Coppell TX | Erb Family Wellness",
+    metaTitle: "Spinal Correction Coppell TX",
     metaDesc: "Advanced corrective chiropractic in Coppell TX. Structural spinal correction, not just pain relief. Call (972) 393-6262.",
     stats: ["28 Years Experience", "4.8 Stars (306+ Reviews)", "Structural Correction"],
     label: "OUR CORE SERVICE",
@@ -325,10 +325,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "spinal-decompression",
     name: "Spinal Decompression",
-    heroLight: "Non-Surgical Spinal",
-    heroHeavy: "Decompression",
+    heroLight: "Spinal Decompression",
+    heroHeavy: "Coppell TX",
     heroSub: "Targeted traction therapy that relieves disc pressure, reduces nerve compression, and promotes disc healing — without surgery.",
-    metaTitle: "Spinal Decompression Coppell TX | Erb Family Wellness",
+    metaTitle: "Spinal Decompression Coppell TX",
     metaDesc: "Non-surgical spinal decompression in Coppell TX. Disc herniation & sciatica relief without surgery. Call (972) 393-6262.",
     stats: ["Non-Surgical", "FDA-Cleared", "86%+ Success Rate"],
     label: "ABOUT DECOMPRESSION",
@@ -381,10 +381,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "corrective-exercises",
     name: "Corrective Exercises",
-    heroLight: "Corrective",
-    heroHeavy: "Exercises",
+    heroLight: "Corrective Exercises",
+    heroHeavy: "Coppell TX",
     heroSub: "Targeted rehab exercises that reinforce your spinal corrections and build lasting structural stability — your homework for a healthier spine.",
-    metaTitle: "Corrective Exercises Coppell TX | Erb Family Wellness",
+    metaTitle: "Corrective Exercises Coppell TX",
     metaDesc: "Corrective exercise programs in Coppell TX. Custom rehab to reinforce spinal correction. Call (972) 393-6262.",
     stats: ["Custom Programs", "At-Home Rehab", "Structural Stability"],
     label: "ABOUT CORRECTIVE EXERCISES",
@@ -436,10 +436,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "nutrition",
     name: "Nutrition Counseling",
-    heroLight: "Nutrition",
-    heroHeavy: "Counseling",
+    heroLight: "Nutrition Counseling",
+    heroHeavy: "Coppell TX",
     heroSub: "MaxLiving 5 Essentials nutrition. Fuel your body for healing, reduce inflammation, and support spinal correction from the inside out.",
-    metaTitle: "Nutrition Counseling Coppell TX | Erb Family Wellness",
+    metaTitle: "Nutrition Counseling Coppell TX",
     metaDesc: "MaxLiving nutrition counseling in Coppell TX. Anti-inflammatory protocols to fuel healing. Call (972) 393-6262.",
     stats: ["MaxLiving Certified", "5 Essentials", "Anti-Inflammatory"],
     label: "ABOUT NUTRITION",
@@ -490,10 +490,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "neuropathy",
     name: "Neuropathy Treatment",
-    heroLight: "Neuropathy",
-    heroHeavy: "Treatment",
+    heroLight: "Neuropathy Treatment",
+    heroHeavy: "Coppell TX",
     heroSub: "Restore nerve function without drugs or surgery. Advanced protocols that address the root cause of numbness, tingling, and burning pain.",
-    metaTitle: "Neuropathy Treatment Coppell TX | Erb Family Wellness",
+    metaTitle: "Neuropathy Treatment Coppell TX",
     metaDesc: "Advanced neuropathy treatment in Coppell TX. Restore nerve function without drugs or surgery. Call (972) 393-6262.",
     stats: ["Drug-Free Protocol", "Nerve Regeneration", "Board-Certified Neurologist"],
     label: "ABOUT NEUROPATHY TREATMENT",
@@ -546,10 +546,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "pediatric",
     name: "Pediatric Chiropractic",
-    heroLight: "Pediatric",
-    heroHeavy: "Chiropractic",
+    heroLight: "Pediatric Chiropractic",
+    heroHeavy: "Coppell TX",
     heroSub: "Gentle, safe chiropractic care for infants, children, and teens. Building healthy spines from the very beginning.",
-    metaTitle: "Pediatric Chiropractic Coppell TX | Erb Family Wellness",
+    metaTitle: "Pediatric Chiropractic Coppell TX",
     metaDesc: "Gentle pediatric chiropractic in Coppell TX. Safe care for infants, kids & teens. Call (972) 393-6262.",
     stats: ["Gentle Techniques", "All Ages", "Family-Friendly"],
     label: "ABOUT PEDIATRIC CARE",
@@ -601,10 +601,10 @@ const servicesData: ServiceData[] = [
   {
     slug: "prenatal",
     name: "Prenatal Chiropractic",
-    heroLight: "Prenatal",
-    heroHeavy: "Chiropractic",
+    heroLight: "Prenatal Chiropractic",
+    heroHeavy: "Coppell TX",
     heroSub: "Safe, gentle chiropractic care for expecting mothers. Support your body through pregnancy, reduce discomfort, and prepare for an easier delivery.",
-    metaTitle: "Prenatal Chiropractic Coppell TX | Erb Family Wellness",
+    metaTitle: "Prenatal Chiropractic Coppell TX",
     metaDesc: "Prenatal chiropractic care in Coppell TX. Safe pregnancy adjustments for comfort & easier delivery. Call (972) 393-6262.",
     stats: ["Pregnancy-Safe", "Webster Technique", "Natural Birth Support"],
     label: "ABOUT PRENATAL CARE",
@@ -683,8 +683,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
   const name = titleMap[slug] || "Service";
   return {
-    title: `${name} — Erb Family Wellness | Coppell & Southlake, TX`,
-    description: `${name} at Erb Family Wellness in Coppell and Southlake, TX. 28 years of corrective care. Call (972) 393-6262.`,
+    title: `${name} Coppell TX`,
+    description: `${name} at Erb Family Wellness in Coppell TX. 28 years of corrective care. Call (972) 393-6262.`,
   };
 }
 
@@ -727,8 +727,50 @@ export default async function ServicePage({ params }: Props) {
     );
   }
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faq.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    name: service.name,
+    description: service.metaDesc,
+    provider: {
+      "@type": "Chiropractor",
+      name: "Erb Family Wellness",
+      telephone: "(972) 393-6262",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "255 S Denton Tap Rd, Suite 200",
+        addressLocality: "Coppell",
+        addressRegion: "TX",
+        postalCode: "75019",
+      },
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.erbfamilywellness.com" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://www.erbfamilywellness.com/services" },
+      { "@type": "ListItem", position: 3, name: service.name, item: `https://www.erbfamilywellness.com/services/${service.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <PageHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Services", href: "/services" }, { label: service.name }]}
         titleLight={service.heroLight}

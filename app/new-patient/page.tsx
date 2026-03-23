@@ -5,9 +5,9 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "New Patient Special $67 - Chiropractor Coppell TX",
+  title: "$67 New Patient Special | Erb Family Wellness",
   description:
-    "$67 first visit includes consultation, exam, X-rays & adjustment at Erb Family Wellness in Coppell & Southlake, TX. (972) 393-6262.",
+    "$67 new patient visit in Coppell TX includes consultation, exam, X-rays & first adjustment. Call (972) 393-6262 to book.",
 };
 
 const faqItems = [

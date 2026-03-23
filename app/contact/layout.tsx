@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Chiropractor Coppell TX",
+  title: "Contact | Erb Family Wellness Coppell TX",
   description:
-    "Contact Erb Family Wellness — two locations in Coppell & Southlake, TX. Walk-ins welcome. (972) 393-6262.",
+    "Contact Erb Family Wellness in Coppell & Southlake TX. Two locations serving DFW. Call (972) 393-6262 today.",
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {

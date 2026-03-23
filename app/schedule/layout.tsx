@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Schedule Appointment | Chiropractor Coppell TX",
+  title: "Schedule Appointment | Erb Family Wellness",
   description:
-    "Book your appointment at Erb Family Wellness in Coppell or Southlake, TX. $67 new patient special. (972) 393-6262.",
+    "Book your $67 new patient appointment at Erb Family Wellness in Coppell or Southlake TX. Call (972) 393-6262.",
 };
 
 export default function ScheduleLayout({ children }: { children: React.ReactNode }) {

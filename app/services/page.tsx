@@ -5,9 +5,9 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import ServiceCard from "@/components/ServiceCard";
 
 export const metadata: Metadata = {
-  title: "Chiropractic Services Coppell TX",
+  title: "Chiropractic Services | Erb Family Wellness",
   description:
-    "HBOT, SoftWave, spinal decompression, thermography & more at Erb Family Wellness in Coppell & Southlake, TX. 28 years. (972) 393-6262.",
+    "HBOT, SoftWave, spinal decompression, thermography & more in Coppell TX. 28 years of corrective care. Call (972) 393-6262.",
 };
 
 const services = [
