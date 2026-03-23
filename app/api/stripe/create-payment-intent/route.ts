@@ -41,8 +41,9 @@ export async function POST(request: NextRequest) {
       ok: true,
       clientSecret: paymentIntent.client_secret,
     });
-  } catch (err) {
-    console.error('[/api/stripe/create-payment-intent] Stripe error', err);
-    return NextResponse.json({ ok: false, error: 'Payment creation failed' }, { status: 500 });
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error('[/api/stripe/create-payment-intent] Stripe error:', msg);
+    return NextResponse.json({ ok: false, error: 'Payment creation failed', detail: msg }, { status: 500 });
   }
 }
