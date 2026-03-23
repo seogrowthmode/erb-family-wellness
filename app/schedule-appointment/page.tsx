@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useRef, useCallback } from "react";
 import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
-import { RW_EMBED_ID, LOCATIONS } from "@/lib/lead-config";
+import { LOCATIONS } from "@/lib/lead-config";
 
 function nativeSetter(el: HTMLInputElement | null, val: string) {
   if (!el || !val || el.value) return;
@@ -30,6 +30,7 @@ function ScheduleContent() {
   const email = params.get("email") || "";
   const phone = params.get("phone") || "";
   const location = (params.get("location") || "coppell") as keyof typeof LOCATIONS;
+  const loc = LOCATIONS[location] || LOCATIONS.coppell;
   const observerRef = useRef<MutationObserver | null>(null);
   const trackedRef = useRef(false);
 
@@ -55,6 +56,19 @@ function ScheduleContent() {
       // fire and forget
     }
   }, [location, firstName, lastName, email, phone]);
+
+  // Dynamically load the correct RW embed based on location
+  useEffect(() => {
+    const container = document.getElementById("rw-embed-container");
+    if (!container) return;
+    container.innerHTML = "";
+    const script = document.createElement("script");
+    script.charset = "utf-8";
+    script.src = "https://cdn.reviewwave.com/js/reviewwave.js";
+    script.dataset.id = loc.rwEmbedId;
+    script.async = true;
+    container.appendChild(script);
+  }, [loc.rwEmbedId]);
 
   useEffect(() => {
     // Auto-fill RW fields after embed loads
@@ -102,8 +116,6 @@ function ScheduleContent() {
     };
   }, [firstName, lastName, email, phone, location, fireAppointmentTracker]);
 
-  const loc = LOCATIONS[location] || LOCATIONS.coppell;
-
   return (
     <>
       <PageHero
@@ -143,15 +155,8 @@ function ScheduleContent() {
                   best for you.
                 </p>
 
-                {/* ReviewWave embed */}
-                <div id="rw-embed-container">
-                  <script
-                    charSet="utf-8"
-                    src="https://cdn.reviewwave.com/js/reviewwave.js"
-                    data-id={RW_EMBED_ID}
-                    async
-                  />
-                </div>
+                {/* ReviewWave embed -- loaded dynamically per location */}
+                <div id="rw-embed-container" />
               </div>
             </RevealOnScroll>
 
