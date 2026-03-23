@@ -23,7 +23,7 @@ export default function SchedulePage() {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Schedule" }]}
         titleLight="Schedule Your"
         titleHeavy="Appointment"
-        subtitle="$55 New Patient Special — Comprehensive consultation, exam, X-rays, and first adjustment."
+        subtitle="$67 New Patient Special — Comprehensive consultation, exam, X-rays, and first adjustment."
         short
       />
 
@@ -34,7 +34,7 @@ export default function SchedulePage() {
             <RevealOnScroll>
               <div className="form-card" style={{ padding: "56px 48px" }}>
                 <p className="form-card__price">
-                  New Patient Special: <strong style={{ fontSize: 40 }}>$55</strong>
+                  New Patient Special: <strong style={{ fontSize: 40 }}>$67</strong>
                 </p>
                 <p className="form-card__subtitle">Choose your location and preferred service below.</p>
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -73,7 +73,7 @@ export default function SchedulePage() {
                       <label htmlFor="reason">Reason for Visit</label>
                       <select id="reason" required defaultValue="">
                         <option value="" disabled>Select a reason</option>
-                        <option value="new-patient">New Patient Visit ($55 Special)</option>
+                        <option value="new-patient">New Patient Visit ($67 Special)</option>
                         <option value="hbot">Hyperbaric Oxygen Therapy (HBOT)</option>
                         <option value="softwave">SoftWave Therapy</option>
                         <option value="thermography">Thermography</option>

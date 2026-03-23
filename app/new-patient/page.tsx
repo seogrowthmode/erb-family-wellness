@@ -5,14 +5,14 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "New Patient Special $55 - Chiropractor Coppell TX",
+  title: "New Patient Special $67 - Chiropractor Coppell TX",
   description:
-    "$55 first visit includes consultation, exam, X-rays & adjustment at Erb Family Wellness in Coppell & Southlake, TX. (972) 393-6262.",
+    "$67 first visit includes consultation, exam, X-rays & adjustment at Erb Family Wellness in Coppell & Southlake, TX. (972) 393-6262.",
 };
 
 const faqItems = [
   {
-    question: "What's included in the $55 visit?",
+    question: "What's included in the $67 visit?",
     answer: "Comprehensive consultation, thorough examination, any necessary X-rays, and your first adjustment. Dr. Erb will identify the root cause of your health concerns.",
   },
   {
@@ -38,7 +38,7 @@ export default function NewPatientPage() {
     <>
       <PageHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "New Patients" }]}
-        titleLight="Your $55 first visit —"
+        titleLight="Your $67 first visit —"
         titleHeavy="everything you need to know."
         subtitle="Comprehensive consultation, exam, X-rays, and your first adjustment. Two locations: Coppell and Southlake."
       />
@@ -61,7 +61,7 @@ export default function NewPatientPage() {
                 <div className="step">
                   <div className="step__num">01</div>
                   <div className="step__content">
-                    <h4>Book Your $55 Visit</h4>
+                    <h4>Book Your $67 Visit</h4>
                     <p>Choose Coppell or Southlake. Call (972) 393-6262 or book online. We&rsquo;ll confirm your appointment and send you everything you need.</p>
                   </div>
                 </div>
@@ -92,17 +92,17 @@ export default function NewPatientPage() {
         </div>
       </section>
 
-      {/* $55 SPECIAL */}
+      {/* $67 SPECIAL */}
       <section className="page-section page-section--navy" style={{ textAlign: "center" }}>
         <div className="container-erb">
           <RevealOnScroll>
             <span className="label label--light">NEW PATIENT SPECIAL</span>
-            <div style={{ fontSize: 80, fontWeight: 900, color: "var(--color-gold)", lineHeight: 1, marginBottom: 16 }}>$55</div>
+            <div style={{ fontSize: 80, fontWeight: 900, color: "var(--color-gold)", lineHeight: 1, marginBottom: 16 }}>$67</div>
             <p style={{ fontSize: 20, fontWeight: 500, color: "var(--color-text-light)", lineHeight: 1.5, marginBottom: 12 }}>
               Comprehensive Consultation + Exam + X-Rays + First Adjustment
             </p>
             <p style={{ fontSize: 15, color: "rgba(241,236,232,.5)", marginBottom: 36 }}>
-              Everything you need to start your healing journey &mdash; for just $55.
+              Everything you need to start your healing journey &mdash; for just $67.
             </p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 20 }}>
               <Link href="/schedule" className="btn btn--teal">Book at Coppell &rarr;</Link>

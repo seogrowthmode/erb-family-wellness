@@ -4,7 +4,7 @@ import FormCard from "@/components/FormCard";
 import FAQ from "@/components/FAQ";
 
 const homeFAQs = [
-  { question: "What's included in the $55 new patient visit?", answer: "Your $55 new patient visit includes a comprehensive consultation, examination, any necessary X-rays, and your first adjustment. Dr. Erb will identify the root cause of your health concerns — not just treat symptoms." },
+  { question: "What's included in the $67 new patient visit?", answer: "Your $67 new patient visit includes a comprehensive consultation, examination, any necessary X-rays, and your first adjustment. Dr. Erb will identify the root cause of your health concerns — not just treat symptoms." },
   { question: "What is Hyperbaric Oxygen Therapy (HBOT)?", answer: "HBOT delivers ~100% oxygen in a pressurized chamber, promoting up to 800% stem cell growth. It's used for neurological recovery, stroke rehabilitation, injury healing, and cellular regeneration. Erb Family Wellness is one of the only practices in DFW offering this technology." },
   { question: "What is SoftWave Therapy?", answer: "SoftWave uses targeted shockwaves to activate your body's own healing response. It's non-invasive, requires no drugs, and has no downtime. Effective for chronic pain, sports injuries, and tissue regeneration." },
   { question: "What is whole body thermography?", answer: "Our AlfaSight system measures 120 points across the body to create a comprehensive thermal map. It detects inflammation, dysfunction, and metabolic imbalances — including non-radiation breast health screening. Completely painless and non-invasive." },
@@ -453,7 +453,7 @@ export default function HomePage() {
             <RevealOnScroll>
               <div className="steps">
                 {[
-                  { num: "01", title: "Book Your $55 Visit", desc: "Choose Coppell or Southlake. Call (972) 393-6262 or book online. Your healing journey starts here." },
+                  { num: "01", title: "Book Your $67 Visit", desc: "Choose Coppell or Southlake. Call (972) 393-6262 or book online. Your healing journey starts here." },
                   { num: "02", title: "Advanced Diagnostics", desc: "X-rays, possibly thermography, blood microscopy. Dr. Erb finds what others miss — the root cause, not just the symptom." },
                   { num: "03", title: "Your 5 Essentials Plan", desc: "A custom plan built on all 5 pillars of true health — designed for YOUR body, YOUR goals, YOUR family." },
                 ].map((step, i) => (

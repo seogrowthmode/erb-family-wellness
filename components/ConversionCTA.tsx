@@ -9,7 +9,7 @@ interface ConversionCTAProps {
 }
 
 export default function ConversionCTA({
-  headlineLight = "Your $55 first visit",
+  headlineLight = "Your $67 first visit",
   headlineHeavy = "begins here.",
   showButtons = true,
   compact = false,

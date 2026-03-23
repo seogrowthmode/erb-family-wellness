@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Erb Family Wellness",
   },
   description:
-    "Top-rated chiropractor in Coppell & Southlake, TX. 28 years, 2012 Olympics credentials, HBOT, SoftWave, Thermography. $55 new patient special. (972) 393-6262.",
+    "Top-rated chiropractor in Coppell & Southlake, TX. 28 years, 2012 Olympics credentials, HBOT, SoftWave, Thermography. $67 new patient special. (972) 393-6262.",
   keywords: [
     "chiropractor coppell tx",
     "chiropractor southlake tx",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Erb Family Wellness | Chiropractor in Coppell & Southlake, TX",
     description:
-      "28 years. 2012 London Olympics. The most advanced chiropractic wellness center in DFW. $55 New Patient Special.",
+      "28 years. 2012 London Olympics. The most advanced chiropractic wellness center in DFW. $67 New Patient Special.",
     url: "https://www.erbfamilywellness.com",
     siteName: "Erb Family Wellness",
     locale: "en_US",

@@ -1,5 +1,8 @@
 "use client";
 
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 interface FormCardProps {
   subtitle?: string;
   submitText?: string;
@@ -8,9 +11,13 @@ interface FormCardProps {
 
 export default function FormCard({
   subtitle = "Begin your healing journey today.",
-  submitText = "Book My $55 Visit",
+  submitText = "Claim My $67 Visit",
   showPrice = true,
 }: FormCardProps) {
+  const router = useRouter();
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
   const handlePhoneFormat = (e: React.ChangeEvent<HTMLInputElement>) => {
     let val = e.target.value.replace(/\D/g, "");
     if (val.length > 10) val = val.slice(0, 10);
@@ -23,17 +30,53 @@ export default function FormCard({
     }
   };
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem("fname") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lname") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      location: (form.elements.namedItem("location") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)?.value || "",
+      event_source_url: window.location.href,
+    };
+
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      if (result.ok && result.redirectPath) {
+        router.push(result.redirectPath);
+      } else {
+        setError(result.error || "Something went wrong. Please try again.");
+        setSubmitting(false);
+      }
+    } catch {
+      setError("Unable to submit. Please call us at (972) 393-6262.");
+      setSubmitting(false);
+    }
+  };
+
   return (
     <div className="form-card">
       {showPrice && (
         <>
           <p className="form-card__price">
-            New Patient Special: <strong>$55</strong>
+            New Patient Special: <strong>$67</strong>
           </p>
           <p className="form-card__subtitle">{subtitle}</p>
         </>
       )}
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="fname">First Name</label>
@@ -76,11 +119,14 @@ export default function FormCard({
             <textarea id="message" name="message" placeholder="Tell us about your health goals..." rows={3} />
           </div>
         </div>
-        <button type="submit" className="form-card__submit">
-          {submitText} &rarr;
+        {error && (
+          <p style={{ color: "#e53e3e", fontSize: 13, marginBottom: 12 }}>{error}</p>
+        )}
+        <button type="submit" className="form-card__submit" disabled={submitting}>
+          {submitting ? "Reserving..." : submitText} &rarr;
         </button>
       </form>
-      <p className="form-card__note">CareCredit accepted &middot; Same-day availability</p>
+      <p className="form-card__note">Save $20 with prepay ($47) &middot; CareCredit accepted &middot; Same-day availability</p>
     </div>
   );
 }
