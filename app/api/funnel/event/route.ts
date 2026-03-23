@@ -25,6 +25,7 @@ export async function POST(request: NextRequest) {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             ...body,
+            funnelId: (body.slug as string) || 'david-erb',
             source: 'Website',
             slug: body.slug || 'david-erb',
           }),
