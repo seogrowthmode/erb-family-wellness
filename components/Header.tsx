@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -31,7 +32,14 @@ export default function Header() {
     <nav className={`nav${isHome ? " nav--home" : ""}${scrolled ? " scrolled" : ""}`}>
       <div className="container-erb nav__inner">
         <Link href="/" className="nav__logo">
-          Erb Family <span>Wellness</span>
+          <Image
+            src="/images/erb-logo.png"
+            alt="Erb Family Wellness"
+            width={180}
+            height={48}
+            style={{ height: "auto", maxHeight: 44, width: "auto" }}
+            priority
+          />
         </Link>
         <div className={`nav__links${mobileOpen ? " open" : ""}`}>
           {navLinks.map((link) => (

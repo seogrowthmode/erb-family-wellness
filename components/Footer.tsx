@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,13 @@ export default function Footer() {
         <div className="footer__grid">
           <div className="footer__brand">
             <div className="footer__logo">
-              Erb Family <span>Wellness</span>
+              <Image
+                src="/images/erb-logo.png"
+                alt="Erb Family Wellness"
+                width={160}
+                height={42}
+                style={{ height: "auto", maxHeight: 40, width: "auto" }}
+              />
             </div>
             <p className="footer__tagline">&ldquo;The Greatest Place of Hope and Healing&rdquo;</p>
             <p className="footer__est">Est. 1998 &middot; 2012 London Olympics</p>
