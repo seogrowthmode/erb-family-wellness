@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: 'Payment not configured' }, { status: 500 });
   }
 
-  const stripe = new Stripe(secretKey, { apiVersion: '2026-02-25.clover' as Stripe.LatestApiVersion });
+  const stripe = new Stripe(secretKey);
 
   let body: Record<string, unknown>;
   try {
