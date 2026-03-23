@@ -9,7 +9,10 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: false, error: 'Payment not configured' }, { status: 500 });
   }
 
-  const stripe = new Stripe(secretKey);
+  const stripe = new Stripe(secretKey, {
+    timeout: 15000,
+    maxNetworkRetries: 1,
+  });
 
   let body: Record<string, unknown>;
   try {
