@@ -145,7 +145,9 @@ a { text-decoration: none; color: inherit; }
 .nav__logo { font-size: 20px; font-weight: 700; color: var(--color-navy); transition: color .4s ease; }
 .nav__logo span { color: var(--color-teal); }
 .nav--home .nav__logo { color: var(--color-cream); }
+.nav--home .nav__logo img { filter: brightness(0) invert(1); transition: filter .4s ease; }
 .nav--home.scrolled .nav__logo { color: var(--color-navy); }
+.nav--home.scrolled .nav__logo img { filter: none; }
 .nav__links { display: flex; align-items: center; gap: 32px; }
 .nav__link {
   font-size: 14px;
