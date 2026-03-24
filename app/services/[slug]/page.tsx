@@ -834,7 +834,7 @@ export default async function ServicePage({ params }: Props) {
           <RevealOnScroll delay={200}>
             <div className="cards-grid cards-grid--3" style={{ marginTop: 64 }}>
               {service.scienceCards.map((card) => (
-                <div key={card.title} style={{ background: "var(--color-cream)", borderRadius: "var(--r-md)", padding: "36px 28px" }}>
+                <div key={card.title} style={{ background: "var(--color-cream)", borderRadius: "var(--radius-md)", padding: "36px 28px" }}>
                   <h4 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text-primary)", marginBottom: 10 }}>{card.title}</h4>
                   <p style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.7 }}>{card.desc}</p>
                 </div>

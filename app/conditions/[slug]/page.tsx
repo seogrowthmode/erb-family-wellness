@@ -561,7 +561,7 @@ export default async function ConditionPage({ params }: Props) {
           <RevealOnScroll delay={200}>
             <div className="cards-grid cards-grid--3">
               {condition.empathyCards.map((card) => (
-                <div key={card} style={{ background: "var(--color-white)", borderRadius: "var(--r-md)", padding: "28px 28px 28px 32px", borderLeft: "4px solid var(--color-olive)", fontSize: 16, fontWeight: 500, color: "var(--color-text-primary)", lineHeight: 1.55, boxShadow: "0 4px 20px rgba(14,24,44,.05)" }}>
+                <div key={card} style={{ background: "#fff", borderRadius: "var(--radius-md)", padding: "28px 28px 28px 32px", borderLeft: "4px solid var(--color-olive)", fontSize: 16, fontWeight: 500, color: "var(--color-text-primary)", lineHeight: 1.55, boxShadow: "0 4px 20px rgba(14,24,44,.05)" }}>
                   {card}
                 </div>
               ))}

@@ -148,7 +148,7 @@ export default function TestimonialsPage() {
                 { name: "Jordan Burroughs", medal: "Gold Medal", sport: "Wrestling \u00B7 2012 London Olympics" },
                 { name: "Dartanyon Crockett", medal: "Bronze Medal", sport: "Paralympic Judo \u00B7 2012 London" },
               ].map((a) => (
-                <div key={a.name} style={{ background: "rgba(241,236,232,.06)", borderRadius: "var(--r-md)", padding: 32, textAlign: "center" }}>
+                <div key={a.name} style={{ background: "rgba(241,236,232,.06)", borderRadius: "var(--radius-md)", padding: 32, textAlign: "center" }}>
                   <h3 style={{ fontSize: 20, fontWeight: 700, color: "var(--color-text-light)", marginBottom: 8 }}>{a.name}</h3>
                   <p style={{ fontSize: 14, fontWeight: 600, color: "var(--color-gold)", marginBottom: 6 }}>{a.medal}</p>
                   <p style={{ fontSize: 14, color: "rgba(241,236,232,.5)" }}>{a.sport}</p>
@@ -183,7 +183,7 @@ export default function TestimonialsPage() {
                 { title: "Facebook", desc: "Share your experience on Facebook.", btn: "Review on Facebook", btnClass: "btn btn--outline-dark btn--sm", iconColor: "var(--color-navy)", iconBg: "rgba(14,24,44,.06)" },
                 { title: "Yelp", desc: "Help others find us on Yelp.", btn: "Review on Yelp", btnClass: "btn btn--outline-dark btn--sm", iconColor: "var(--color-navy)", iconBg: "rgba(14,24,44,.06)" },
               ].map((platform) => (
-                <div key={platform.title} style={{ background: "var(--color-cream)", borderRadius: "var(--r-md)", padding: 36, textAlign: "center", boxShadow: "0 4px 20px rgba(14,24,44,.06)" }}>
+                <div key={platform.title} style={{ background: "var(--color-cream)", borderRadius: "var(--radius-md)", padding: 36, textAlign: "center", boxShadow: "0 4px 20px rgba(14,24,44,.06)" }}>
                   <div style={{ width: 56, height: 56, borderRadius: "50%", background: platform.iconBg, margin: "0 auto 20px", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={platform.iconColor} strokeWidth="1.5">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z" />

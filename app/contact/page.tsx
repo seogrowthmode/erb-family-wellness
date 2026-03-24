@@ -1,9 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function ContactPage() {
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
   const handlePhoneFormat = (e: React.ChangeEvent<HTMLInputElement>) => {
     let val = e.target.value.replace(/\D/g, "");
     if (val.length > 10) val = val.slice(0, 10);
@@ -14,6 +19,42 @@ export default function ContactPage() {
     } else if (val.length >= 1) {
       e.target.value = `(${val}`;
     }
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem("fname") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lname") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      location: (form.elements.namedItem("location") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)?.value || "",
+      source: "contact-form",
+      event_source_url: window.location.href,
+    };
+
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      if (result.ok) {
+        setSubmitted(true);
+      } else {
+        setError(result.error || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Unable to submit. Please call us at (972) 393-6262.");
+    }
+    setSubmitting(false);
   };
 
   return (
@@ -36,31 +77,38 @@ export default function ContactPage() {
                 <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text-primary)", marginBottom: 24 }}>
                   Send Us a Message
                 </h3>
-                <form onSubmit={(e) => e.preventDefault()}>
+                {submitted ? (
+                  <div style={{ textAlign: "center", padding: "32px 0" }}>
+                    <div style={{ fontSize: 48, marginBottom: 16 }}>&#10003;</div>
+                    <h3 style={{ fontSize: 20, fontWeight: 700, color: "var(--color-teal)", marginBottom: 8 }}>Message Sent!</h3>
+                    <p style={{ fontSize: 15, color: "var(--color-text-secondary)" }}>We&rsquo;ll respond within 24 hours.</p>
+                  </div>
+                ) : (
+                <form onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="form-group">
-                      <label>First Name</label>
-                      <input type="text" placeholder="First name" />
+                      <label htmlFor="contact-fname">First Name</label>
+                      <input type="text" id="contact-fname" name="fname" placeholder="First name" required />
                     </div>
                     <div className="form-group">
-                      <label>Last Name</label>
-                      <input type="text" placeholder="Last name" />
+                      <label htmlFor="contact-lname">Last Name</label>
+                      <input type="text" id="contact-lname" name="lname" placeholder="Last name" required />
                     </div>
                   </div>
                   <div className="form-row">
                     <div className="form-group">
-                      <label>Email</label>
-                      <input type="email" placeholder="you@email.com" />
+                      <label htmlFor="contact-email">Email</label>
+                      <input type="email" id="contact-email" name="email" placeholder="you@email.com" required />
                     </div>
                     <div className="form-group">
-                      <label>Phone</label>
-                      <input type="tel" placeholder="(___) ___-____" onChange={handlePhoneFormat} />
+                      <label htmlFor="contact-phone">Phone</label>
+                      <input type="tel" id="contact-phone" name="phone" placeholder="(___) ___-____" onChange={handlePhoneFormat} required />
                     </div>
                   </div>
                   <div className="form-row">
                     <div className="form-group form-group--full">
-                      <label>Preferred Location</label>
-                      <select>
+                      <label htmlFor="contact-location">Preferred Location</label>
+                      <select id="contact-location" name="location" defaultValue="">
                         <option value="" disabled>Select a location</option>
                         <option value="coppell">Coppell</option>
                         <option value="southlake">Southlake</option>
@@ -69,13 +117,19 @@ export default function ContactPage() {
                   </div>
                   <div className="form-row">
                     <div className="form-group form-group--full">
-                      <label>Message</label>
-                      <textarea placeholder="How can we help you?" rows={4} />
+                      <label htmlFor="contact-message">Message</label>
+                      <textarea id="contact-message" name="message" placeholder="How can we help you?" rows={4} />
                     </div>
                   </div>
-                  <button type="submit" className="form-card__submit">Send Message &rarr;</button>
+                  {error && (
+                    <p style={{ color: "#e53e3e", fontSize: 13, marginBottom: 12 }}>{error}</p>
+                  )}
+                  <button type="submit" className="form-card__submit" disabled={submitting}>
+                    {submitting ? "Sending..." : "Send Message"} &rarr;
+                  </button>
                   <p className="form-card__note">We&rsquo;ll respond within 24 hours.</p>
                 </form>
+                )}
               </div>
 
               {/* COPPELL */}
@@ -147,12 +201,42 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* IMAGE SECTION */}
+      {/* MAP SECTION */}
       <section className="page-section page-section--white page-section--compact">
         <div className="container-erb">
           <RevealOnScroll>
-            <div className="img-placeholder img-placeholder--med">
-              Modern Erb Family Wellness clinic interior. HBOT chamber, thermography equipment, warm reception area visible.
+            <div className="section-head section-head--center">
+              <span className="label">FIND US</span>
+              <h2 style={{ lineHeight: 1.15, marginBottom: 32 }}>
+                <span className="title-light">Two locations</span>
+                <span className="title-heavy">in the DFW Metroplex.</span>
+              </h2>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }} className="map-grid">
+              <div style={{ borderRadius: "var(--radius-md)", overflow: "hidden", height: 320 }}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.0!2d-96.9867!3d32.9558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2be59e4b1a47%3A0x7c3b8b7d7b7b7b7b!2s255%20S%20Denton%20Tap%20Rd%20%23200%2C%20Coppell%2C%20TX%2075019!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Erb Family Wellness - Coppell Location"
+                />
+              </div>
+              <div style={{ borderRadius: "var(--radius-md)", overflow: "hidden", height: 320 }}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.0!2d-97.1342!3d32.9414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864dd5b2e14c8a7b%3A0x7c3b8b7d7b7b7b7b!2s1845%20E%20Southlake%20Blvd%20%23140%2C%20Southlake%2C%20TX%2076092!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Erb Family Wellness - Southlake Location"
+                />
+              </div>
             </div>
           </RevealOnScroll>
         </div>

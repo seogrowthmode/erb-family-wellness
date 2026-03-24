@@ -48,11 +48,30 @@ export default function Header() {
         <div className={`nav__links${mobileOpen ? " open" : ""}`}>
           <Link href="/about" className="nav__link" style={pathname === "/about" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>About</Link>
           <div className="nav__dropdown" ref={dropdownRef} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-            <Link href="/services" className="nav__link" style={pathname.startsWith("/services") ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>
+            <button
+              type="button"
+              className="nav__link nav__link--dropdown"
+              style={pathname.startsWith("/services") ? { color: "var(--color-navy)", fontWeight: 700 } : undefined}
+              onClick={(e) => {
+                e.preventDefault();
+                if (mobileOpen) {
+                  setServicesOpen(!servicesOpen);
+                } else {
+                  window.location.href = "/services";
+                }
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                setServicesOpen(!servicesOpen);
+              }}
+            >
               Services <span style={{ fontSize: 10, marginLeft: 4 }}>{servicesOpen ? "\u25B2" : "\u25BC"}</span>
-            </Link>
+            </button>
             {servicesOpen && (
               <div className="nav__dropdown-menu">
+                <Link href="/services" className="nav__dropdown-item nav__dropdown-item--all" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
+                  All Services
+                </Link>
                 {siteConfig.services.map((s) => (
                   <Link key={s.slug} href={"href" in s ? s.href : `/services/${s.slug}`} className="nav__dropdown-item" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
                     {s.name}

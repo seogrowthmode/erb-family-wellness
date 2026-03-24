@@ -159,6 +159,7 @@ a { text-decoration: none; color: inherit; }
 .nav--home.scrolled .nav__link { color: var(--color-text-secondary); }
 .nav--home.scrolled .nav__link:hover { color: var(--color-navy); }
 .nav__dropdown { position: relative; padding: 8px 0; }
+.nav__link--dropdown { background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; }
 .nav__dropdown-menu {
   position: absolute;
   top: 100%;
@@ -236,6 +237,18 @@ a { text-decoration: none; color: inherit; }
     gap: 24px;
   }
   .nav__links.open .nav__link { color: var(--color-cream) !important; }
+  .nav__links.open .nav__link--dropdown { color: var(--color-cream) !important; }
+  .nav__links.open .nav__dropdown-menu {
+    position: static;
+    transform: none;
+    background: rgba(241,236,232,.08);
+    border-radius: 8px;
+    box-shadow: none;
+    margin-top: 8px;
+  }
+  .nav__links.open .nav__dropdown-item { color: rgba(241,236,232,.8) !important; }
+  .nav__links.open .nav__dropdown-item:hover { color: var(--color-cream) !important; background: rgba(241,236,232,.1); }
+  .nav__links.open .nav__dropdown-item--all { font-weight: 700; border-bottom: 1px solid rgba(241,236,232,.1); }
 }
 
 /* ========== PAGE HERO ========== */
@@ -544,6 +557,7 @@ a { text-decoration: none; color: inherit; }
   background: var(--color-teal); border-radius: 50%;
   display: flex; align-items: center; justify-content: center; margin-top: 2px;
 }
+.checklist__icon svg { stroke: var(--color-cream); }
 
 /* ========== DIFFERENTIATOR ROW ========== */
 .diff-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
@@ -841,6 +855,46 @@ a { text-decoration: none; color: inherit; }
 .gallery--3 { grid-template-columns: repeat(3, 1fr); }
 .gallery__item { border-radius: var(--radius-md); overflow: hidden; }
 @media (max-width: 768px) { .gallery, .gallery--3 { grid-template-columns: 1fr; } }
+
+/* ========== SECTION HEADLINE SYSTEM ========== */
+.section-headline { line-height: 1.15; margin-bottom: 16px; }
+.section-headline .light {
+  display: block;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 300;
+  color: var(--color-text-primary);
+}
+.section-headline .heavy {
+  display: block;
+  font-size: clamp(34px, 4.5vw, 52px);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+.section-headline--light .light { color: var(--color-text-light); }
+.section-headline--light .heavy { color: var(--color-text-light); }
+.section-sub {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  max-width: 650px;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+.section-sub--light { color: rgba(241,236,232,.6); }
+
+/* ========== 5-COL GRID ========== */
+.cards-grid--5 { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 1024px) { .cards-grid--5 { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .cards-grid--5 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .cards-grid--5 { grid-template-columns: 1fr; } }
+
+/* ========== STEP CONTENT ========== */
+.step__content h4 { font-size: 18px; font-weight: 700; color: var(--color-text-primary); margin-bottom: 6px; }
+.step__content p { font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; }
+
+/* ========== MAP GRID ========== */
+@media (max-width: 768px) {
+  .map-grid { grid-template-columns: 1fr !important; }
+}
 
 /* ========== HOMEPAGE RESPONSIVE ========== */
 @media (max-width: 968px) {

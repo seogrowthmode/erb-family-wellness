@@ -120,7 +120,7 @@ export default function AboutPage() {
                     { name: "Jordan Burroughs", medal: "Gold Medal, Wrestling", desc: "One of the greatest freestyle wrestlers in history. Olympic, World, and NCAA champion." },
                     { name: "Dartanyon Crockett", medal: "Bronze Medal, Paralympic Judo", desc: "Paralympic bronze medalist in Judo. An inspiring story of resilience and determination.", isBronze: true },
                   ].map((athlete) => (
-                    <div key={athlete.name} style={{ background: "rgba(241,236,232,.06)", borderRadius: "var(--r-md)", padding: "28px 24px" }}>
+                    <div key={athlete.name} style={{ background: "rgba(241,236,232,.06)", borderRadius: "var(--radius-md)", padding: "28px 24px" }}>
                       <h4 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text-light)", marginBottom: 4 }}>{athlete.name}</h4>
                       <p style={{ fontSize: 14, fontWeight: 600, color: athlete.isBronze ? "rgba(241,236,232,.7)" : "var(--color-gold)", marginBottom: 8 }}>{athlete.medal}</p>
                       <p style={{ fontSize: 14, color: "rgba(241,236,232,.55)", lineHeight: 1.6 }}>{athlete.desc}</p>
@@ -196,7 +196,7 @@ export default function AboutPage() {
                   bio: "Co-owner and co-founder of Erb Family Wellness. 28 years of clinical practice specializing in thermography, nutrition, pediatric, and prenatal chiropractic care. 2012 London Olympics chiropractor alongside Dr. David. Passionate about empowering women and families to take control of their health through the 5 Essentials.",
                 },
               ].map((doc) => (
-                <div key={doc.name} style={{ background: "var(--color-white)", borderRadius: "var(--r-md)", overflow: "hidden", boxShadow: "0 4px 20px rgba(14,24,44,.06)" }}>
+                <div key={doc.name} style={{ background: "#fff", borderRadius: "var(--radius-md)", overflow: "hidden", boxShadow: "0 4px 20px rgba(14,24,44,.06)" }}>
                   <div className="img-placeholder img-placeholder--tall" style={{ borderRadius: 0, minHeight: 320 }}>
                     {doc.name} &mdash; Photo
                   </div>

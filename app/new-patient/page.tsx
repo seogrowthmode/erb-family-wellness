@@ -129,7 +129,7 @@ export default function NewPatientPage() {
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   {["New Patient Intake Form", "Health History Questionnaire", "Insurance Information Form"].map((form) => (
                     <a key={form} href="#" className="form-download-item" style={{ display: "flex", alignItems: "center", gap: 14, padding: "18px 0", borderBottom: "1px solid rgba(14,24,44,.08)", textDecoration: "none" }}>
-                      <div style={{ width: 40, height: 40, minWidth: 40, borderRadius: "var(--r-sm)", background: "rgba(42,125,108,.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <div style={{ width: 40, height: 40, minWidth: 40, borderRadius: "var(--radius-sm)", background: "rgba(42,125,108,.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--color-teal)" fill="none" strokeWidth="2">
                           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
                         </svg>
@@ -195,7 +195,7 @@ export default function NewPatientPage() {
                 { title: "CareCredit", desc: "Interest-free financing available. Apply online or in-office. Approved in minutes.", gold: true },
                 { title: "Cash Pay", desc: "Affordable cash-pay options for uninsured patients. Ask about our wellness packages.", gold: false },
               ].map((card) => (
-                <div key={card.title} style={{ background: "var(--color-white)", borderRadius: "var(--r-md)", padding: "36px 28px", textAlign: "center", boxShadow: "0 4px 20px rgba(14,24,44,.06)", transition: "transform .3s" }}>
+                <div key={card.title} style={{ background: "#fff", borderRadius: "var(--radius-md)", padding: "36px 28px", textAlign: "center", boxShadow: "0 4px 20px rgba(14,24,44,.06)", transition: "transform .3s" }}>
                   <div style={{ width: 56, height: 56, borderRadius: "50%", background: "rgba(42,125,108,.1)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
                     <svg viewBox="0 0 24 24" width="28" height="28" stroke="var(--color-teal)" fill="none" strokeWidth="1.5">
                       <line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />

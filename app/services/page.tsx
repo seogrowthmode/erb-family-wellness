@@ -129,7 +129,7 @@ export default function ServicesPage() {
                 { num: "04", name: "Oxygen & Exercise", desc: "HBOT, corrective exercises, movement." },
                 { num: "05", name: "Minimize Toxins", desc: "Reduce toxic load on the body." },
               ].map((essential) => (
-                <div key={essential.num} style={{ background: "rgba(241,236,232,.06)", borderRadius: "var(--r-md)", padding: "28px 20px", textAlign: "center" }}>
+                <div key={essential.num} style={{ background: "rgba(241,236,232,.06)", borderRadius: "var(--radius-md)", padding: "28px 20px", textAlign: "center" }}>
                   <div style={{ fontSize: 13, fontWeight: 800, letterSpacing: 2, color: "var(--color-gold)", marginBottom: 12 }}>{essential.num}</div>
                   <h4 style={{ fontSize: 16, fontWeight: 700, color: "var(--color-text-light)", marginBottom: 8 }}>{essential.name}</h4>
                   <p style={{ fontSize: 13, color: "rgba(241,236,232,.55)", lineHeight: 1.6 }}>{essential.desc}</p>

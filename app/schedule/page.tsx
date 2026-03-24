@@ -87,27 +87,27 @@ export default function SchedulePage() {
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="fname">First Name</label>
-                      <input type="text" id="fname" placeholder="First name" required />
+                      <input type="text" id="fname" name="fname" placeholder="First name" required />
                     </div>
                     <div className="form-group">
                       <label htmlFor="lname">Last Name</label>
-                      <input type="text" id="lname" placeholder="Last name" required />
+                      <input type="text" id="lname" name="lname" placeholder="Last name" required />
                     </div>
                   </div>
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="email">Email</label>
-                      <input type="email" id="email" placeholder="you@email.com" required />
+                      <input type="email" id="email" name="email" placeholder="you@email.com" required />
                     </div>
                     <div className="form-group">
                       <label htmlFor="phone">Phone</label>
-                      <input type="tel" id="phone" placeholder="(555) 555-5555" onChange={handlePhoneFormat} required />
+                      <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" onChange={handlePhoneFormat} required />
                     </div>
                   </div>
                   <div className="form-row">
                     <div className="form-group form-group--full">
                       <label htmlFor="location">Preferred Location</label>
-                      <select id="location" required defaultValue="">
+                      <select id="location" name="location" required defaultValue="">
                         <option value="" disabled>Select a location</option>
                         <option value="coppell">Coppell &mdash; 255 S Denton Tap Rd</option>
                         <option value="southlake">Southlake &mdash; 1845 E Southlake Blvd</option>
@@ -117,7 +117,7 @@ export default function SchedulePage() {
                   <div className="form-row">
                     <div className="form-group form-group--full">
                       <label htmlFor="reason">Reason for Visit</label>
-                      <select id="reason" required defaultValue="">
+                      <select id="reason" name="reason" required defaultValue="">
                         <option value="" disabled>Select a reason</option>
                         <option value="new-patient">New Patient Visit ($67 Special)</option>
                         <option value="hbot">Hyperbaric Oxygen Therapy (HBOT)</option>
@@ -151,7 +151,7 @@ export default function SchedulePage() {
                   <div className="form-row">
                     <div className="form-group form-group--full">
                       <label htmlFor="message">Message <span style={{ fontWeight: 400, textTransform: "none", letterSpacing: 0 }}>(optional)</span></label>
-                      <textarea id="message" placeholder="Anything we should know before your visit?" />
+                      <textarea id="message" name="message" placeholder="Anything we should know before your visit?" />
                     </div>
                   </div>
                   <button type="submit" className="form-card__submit" disabled={submitting}>{submitting ? "Booking..." : "Book My Appointment"} &rarr;</button>
