@@ -59,7 +59,7 @@ const conditionsData: ConditionData[] = [
     approachHeadlineHeavy: "back pain.",
     approachHeadlineAccent: "We correct it.",
     approachParagraphs: [
-      "Dr. Erb uses advanced diagnostics — X-rays, thermography, and blood microscopy — to identify the structural, neurological, and metabolic root causes of your back pain. As a Board-Certified Chiropractic Neurologist, he finds what other providers miss.",
+      "Dr. Erb uses advanced diagnostics — X-rays, thermography, and blood microscopy — to identify the structural, neurological, and metabolic root causes of your back pain. As a practice with a Board-Certified Chiropractic Neurologist (Dr. Kimberly), Erb Family Wellness finds what other providers miss.",
       "Your treatment plan is built on the 5 Essentials framework, combining corrective chiropractic with nutrition, exercise, mindset, and toxin reduction for complete healing.",
     ],
     formSubtitle: "Start your back pain recovery today.",
@@ -86,7 +86,7 @@ const conditionsData: ConditionData[] = [
     ],
     faq: [
       { question: "What causes chronic back pain?", answer: "Multiple factors including spinal misalignment, disc degeneration, poor posture, muscle imbalances, and neurological dysfunction. Dr. Erb's advanced diagnostics identify your specific cause." },
-      { question: "How is Erb's approach different from other chiropractors?", answer: "Most chiropractors treat symptoms. Dr. Erb is a Board-Certified Chiropractic Neurologist with 28 years of experience and technology no one else in DFW offers — HBOT, SoftWave, thermography, blood microscopy." },
+      { question: "How is Erb's approach different from other chiropractors?", answer: "Most chiropractors treat symptoms. Dr. Kimberly Erb is a Board-Certified Chiropractic Neurologist with 28 years of experience and technology no one else in DFW offers — HBOT, SoftWave, thermography, blood microscopy." },
       { question: "Do I need surgery for my back pain?", answer: "Most back pain responds to non-surgical corrective care. Erb offers spinal decompression, SoftWave, HBOT, and advanced chiropractic correction as alternatives to surgery." },
       { question: "How many visits will I need?", answer: "Every patient is different. Dr. Erb will create a custom corrective care plan based on your specific condition, goals, and diagnostic findings." },
     ],
@@ -116,7 +116,7 @@ const conditionsData: ConditionData[] = [
     approachHeadlineHeavy: "neck pain symptoms.",
     approachHeadlineAccent: "We fix the structure.",
     approachParagraphs: [
-      "Dr. David Erb uses detailed X-rays, thermography, and neurological testing to map exactly where your cervical spine has shifted and which nerves are compromised. As a Board-Certified Chiropractic Neurologist (DACNB), he identifies problems other providers miss entirely.",
+      "Dr. David Erb uses detailed X-rays, thermography, and neurological testing to map exactly where your cervical spine has shifted and which nerves are compromised. Dr. Kimberly, a Board-Certified Chiropractic Neurologist (DACNB), identifies problems other providers miss entirely.",
       "Your corrective care plan may combine precise chiropractic adjustments, SoftWave tissue regeneration, spinal decompression, and rehabilitative exercises — all designed to restore the natural curve of your cervical spine and relieve pressure at the source.",
       "Patients travel from across DFW and beyond for this level of care. With two locations in Coppell and Southlake, advanced corrective neck care is closer than you think.",
     ],
@@ -177,7 +177,7 @@ const conditionsData: ConditionData[] = [
     approachHeadlineHeavy: "to its origin.",
     approachHeadlineAccent: "Then we correct it.",
     approachParagraphs: [
-      "Dr. David Erb uses advanced imaging and neurological assessment to pinpoint whether your sciatica stems from a disc herniation, spinal stenosis, degenerative changes, or pelvic misalignment. As a Board-Certified Chiropractic Neurologist, he evaluates nerve function at a level most providers simply do not.",
+      "Dr. David Erb uses advanced imaging and neurological assessment to pinpoint whether your sciatica stems from a disc herniation, spinal stenosis, degenerative changes, or pelvic misalignment. As a practice with a Board-Certified Chiropractic Neurologist (Dr. Kimberly), Erb Family Wellness evaluates nerve function at a level most providers simply do not.",
       "Treatment may include spinal decompression to relieve disc pressure, corrective adjustments to realign the lumbar spine, SoftWave therapy to reduce inflammation around the nerve root, and targeted exercises to stabilize the correction. HBOT can accelerate nerve healing at the cellular level.",
     ],
     formSubtitle: "Get relief from sciatica — without surgery.",
@@ -238,7 +238,7 @@ const conditionsData: ConditionData[] = [
     approachHeadlineHeavy: "not the headache.",
     approachHeadlineAccent: "That's the difference.",
     approachParagraphs: [
-      "Dr. David Erb begins with a thorough neurological examination, cervical X-rays, and thermographic imaging to identify misalignments, nerve interference, and vascular restrictions in the upper cervical spine. As a DACNB-certified chiropractic neurologist, he evaluates brain-body communication that most headache providers never assess.",
+      "Dr. David Erb begins with a thorough neurological examination, cervical X-rays, and thermographic imaging to identify misalignments, nerve interference, and vascular restrictions in the upper cervical spine. As a practice with a DACNB-certified chiropractic neurologist (Dr. Kimberly), Erb Family Wellness evaluates brain-body communication that most headache providers never assess.",
       "Your plan may combine corrective cervical adjustments, SoftWave therapy to reduce inflammation, nutritional support for migraine triggers, and targeted exercises to restore proper cervical curvature. Patients with severe or long-standing migraines may also benefit from HBOT to reduce neurological inflammation.",
       "This is why patients across the DFW metroplex — and beyond — trust Erb Family Wellness for headache and migraine care that actually works.",
     ],
@@ -302,7 +302,7 @@ const conditionsData: ConditionData[] = [
     approachHeadlineHeavy: "Not just manage symptoms.",
     approachParagraphs: [
       "Dr. David Erb combines multiple advanced therapies to address neuropathy at the nerve level. Hyperbaric Oxygen Therapy (HBOT) delivers concentrated oxygen to damaged nerve tissue, triggering up to 800% stem cell growth and promoting actual nerve regeneration. SoftWave therapy uses acoustic waves to stimulate blood flow and reduce inflammation around affected nerves.",
-      "As a Board-Certified Chiropractic Neurologist (DACNB), Dr. Erb also evaluates spinal alignment and neurological function to determine whether nerve compression in the spine is contributing to your peripheral symptoms. Many patients with neuropathy have an undetected spinal component that must be addressed for complete recovery.",
+      "Dr. Kimberly, a Board-Certified Chiropractic Neurologist (DACNB), also evaluates spinal alignment and neurological function to determine whether nerve compression in the spine is contributing to your peripheral symptoms. Many patients with neuropathy have an undetected spinal component that must be addressed for complete recovery.",
       "Our Coppell and Southlake offices offer a combination of therapies unavailable anywhere else in the DFW area — giving neuropathy patients real hope for improvement.",
     ],
     formSubtitle: "Take the first step toward nerve recovery.",
@@ -428,7 +428,7 @@ const conditionsData: ConditionData[] = [
     approachHeadlineHeavy: "and correct.",
     approachHeadlineAccent: "No scalpel required.",
     approachParagraphs: [
-      "Dr. David Erb begins with diagnostic imaging and a thorough neurological evaluation to determine the exact location, severity, and nerve involvement of your disc herniation. His DACNB board certification means he evaluates neurological function at a level beyond standard chiropractic assessment.",
+      "Dr. David Erb begins with diagnostic imaging and a thorough neurological evaluation to determine the exact location, severity, and nerve involvement of your disc herniation. The practice's DACNB board certification (Dr. Kimberly) means they evaluate neurological function at a level beyond standard chiropractic assessment.",
       "Spinal decompression therapy uses precise, computer-controlled traction to create negative intradiscal pressure — gently retracting the herniated material and allowing nutrients and oxygen to flow back into the disc for healing. Combined with corrective adjustments, SoftWave tissue regeneration, and HBOT for accelerated cellular repair, this multi-therapy approach gives herniated disc patients the best possible outcome without surgery.",
     ],
     formSubtitle: "Explore non-surgical herniated disc treatment.",

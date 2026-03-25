@@ -13,7 +13,7 @@ const timelineNodes = [
   { year: "1998", title: "Practice Founded", desc: "Dr. David & Dr. Kimberly open in Coppell, TX.", img: "Founding day photo" },
   { year: "2002", title: "MaxLiving", desc: "Become MaxLiving Health Center.", img: "MaxLiving certification" },
   { year: "2005", title: "Growing Family", desc: "Practice grows, community roots deepen.", img: "Community event" },
-  { year: "2008", title: "Advanced Training", desc: "Dr. David earns Board Certification in Chiropractic Neurology (DACNB).", img: "Board certification" },
+  { year: "2008", title: "Advanced Training", desc: "Dr. Kimberly earns Board Certification in Chiropractic Neurology (DACNB).", img: "Board certification" },
   { year: "2010", title: "Zimbabwe", desc: "First international MaxLiving clinic in Africa.", img: "Zimbabwe clinic" },
   { year: "2012", title: "London Olympics", desc: "USA Wrestling, Judo, Weightlifting, Paralympic Sitting Volleyball. Gold medalists.", img: "London Olympics 2012", caption: "Team USA" },
   { year: "2018", title: "Technology", desc: "HBOT, SoftWave, AlfaSight Thermography, Blood Microscopy.", img: "Advanced technology suite" },
@@ -87,19 +87,17 @@ export default function TeamPage() {
                 <div className="img-placeholder">Dr. David Erb &mdash; professional editorial portrait</div>
               </div>
               <div className="doc-feature__name">Dr. David Erb</div>
-              <div className="doc-feature__creds">D.C., CCCN, DACNB</div>
+              <div className="doc-feature__creds">D.C., CCCN</div>
               <div className="cred-tags">
                 <span className="cred-tag">DC</span>
                 <span className="cred-tag">CCCN</span>
-                <span className="cred-tag">DACNB</span>
                 <span className="cred-tag">Parker College 1999</span>
                 <span className="cred-tag">2012 London Olympics</span>
                 <span className="cred-tag">Zimbabwe 2010</span>
-                <span className="cred-tag">Board-Certified Neurologist</span>
+                <span className="cred-tag">MaxLiving Network</span>
               </div>
               <div className="doc-feature__bio">
-                <p>From El Reno, Oklahoma. Graduated Parker College of Chiropractic in 1999. Founded Erb Family Wellness in Coppell, TX in 1998.</p>
-                <p>Board-Certified Chiropractic Neurologist (DACNB) &mdash; one of few in DFW with this advanced certification.</p>
+                <p>From El Reno, Oklahoma. Graduated Parker College of Chiropractic in 1999. Founded Erb Family Wellness in Coppell, TX in 1998. Proud member of the MaxLiving Network.</p>
                 <p>2012 London Olympics: served as chiropractor for USA Wrestling, USA Judo, USA Weightlifting, and Paralympic USA Sitting Volleyball. Treated gold medalists Kayla Harrison and Jordan Burroughs.</p>
                 <p>2010: Co-founded the first international MaxLiving Health Center in Zimbabwe, Africa.</p>
                 <p>International speaker on corrective chiropractic care and the 5 Essentials.</p>
@@ -109,7 +107,7 @@ export default function TeamPage() {
           <RevealOnScroll delay={100}>
             <div className="pull-quote">
               &ldquo;I believe the body was designed to heal. Our job is to remove interference and give it what it needs.&rdquo;
-              <cite>Dr. David Erb, D.C., DACNB</cite>
+              <cite>Dr. David Erb, D.C., CCCN</cite>
             </div>
           </RevealOnScroll>
           <RevealOnScroll delay={150}>
@@ -129,9 +127,11 @@ export default function TeamPage() {
                 <div className="img-placeholder">Dr. Kimberly Erb &mdash; professional editorial portrait</div>
               </div>
               <div className="doc-feature__name">Dr. Kimberly Erb</div>
-              <div className="doc-feature__creds">D.C.</div>
+              <div className="doc-feature__creds">D.C., DACNB</div>
               <div className="cred-tags">
                 <span className="cred-tag">DC</span>
+                <span className="cred-tag">DACNB</span>
+                <span className="cred-tag">Board-Certified Chiropractic Neurologist</span>
                 <span className="cred-tag">28 Years</span>
                 <span className="cred-tag">2012 London Olympics</span>
                 <span className="cred-tag">Zimbabwe 2010</span>
@@ -139,7 +139,7 @@ export default function TeamPage() {
                 <span className="cred-tag">Pediatric &amp; Prenatal</span>
               </div>
               <div className="doc-feature__bio">
-                <p>Co-Owner and co-founder. 28 years alongside Dr. David.</p>
+                <p>Co-Owner and co-founder. Board-Certified Chiropractic Neurologist (DACNB). 28 years alongside Dr. David.</p>
                 <p>2012 London Olympics &mdash; served alongside Dr. David for Team USA.</p>
                 <p>Co-founded the Zimbabwe MaxLiving Health Center in 2010.</p>
                 <p>Specializes in Thermography (AlfaSight 120-point system), Metabolix testing, Functional Nutrition, Toxin Removal, Pediatric and Prenatal chiropractic care.</p>

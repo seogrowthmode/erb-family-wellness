@@ -11,7 +11,7 @@ const homeFAQs = [
   { question: "What is whole body thermography?", answer: "Our AlfaSight system measures 120 points across the body to create a comprehensive thermal map. It detects inflammation, dysfunction, and metabolic imbalances — including non-radiation breast health screening. Completely painless and non-invasive." },
   { question: "Do you treat children and pregnant women?", answer: "Absolutely. Dr. Kimberly specializes in pediatric and prenatal chiropractic care. We see patients from newborns to grandparents. Many families bring their children from infancy — our gentle techniques are safe for all ages." },
   { question: "Do you accept insurance? CareCredit?", answer: "We work with most insurance plans and are proud to accept CareCredit for flexible payment options. Contact our office at (972) 393-6262 to verify your specific coverage before your visit." },
-  { question: "What makes Erb different from other DFW chiropractors?", answer: "28 years of experience. Board-certified chiropractic neurologist. 2012 London Olympics credentials. Technology stack no one else in DFW offers — HBOT, SoftWave, AlfaSight Thermography, Blood Microscopy. Patients fly in from around the world. No other practice in the Metroplex combines this level of expertise with this level of technology." },
+  { question: "What makes Erb different from other DFW chiropractors?", answer: "28 years of experience. 2012 London Olympics credentials. Part of the MaxLiving Network. Technology stack no one else in DFW offers -- HBOT, SoftWave, AlfaSight Thermography, Blood Microscopy. Dr. Kimberly is a Board-Certified Chiropractic Neurologist (DACNB). Patients fly in from around the world." },
   { question: "Do patients really travel from around the world?", answer: "Yes. Dr. Erb's expertise in advanced spinal correction and his unique technology stack attract patients from across the US and internationally. His Olympic credentials and Board Certification in Chiropractic Neurology make him a sought-after specialist for complex cases." },
 ];
 
@@ -122,7 +122,7 @@ export default function HomePage() {
                     <circle cx="12" cy="9" r="2.5" />
                   </svg>
                 </div>
-                <div className="cred-item__title">Board-Certified Neurologist</div>
+                <div className="cred-item__title">MaxLiving Network</div>
               </div>
             </div>
           </div>
@@ -363,8 +363,8 @@ export default function HomePage() {
                   <span style={{ fontSize: 11, color: "var(--color-text-secondary)" }}>Dr. David Photo</span>
                 </div>
                 <h3 style={{ fontSize: 22, fontWeight: 700, color: "var(--color-text-primary)", marginBottom: 4 }}>Dr. David Erb</h3>
-                <p style={{ fontSize: 12, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase", marginBottom: 16 }}>D.C., CCCN, DACNB</p>
-                <p style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.65 }}>Founder. Board-Certified Chiropractic Neurologist. 2012 London Olympics — USA Wrestling, Judo, Weightlifting. Treated gold medalists Kayla Harrison &amp; Jordan Burroughs. Opened the first international MaxLiving clinic in Zimbabwe.</p>
+                <p style={{ fontSize: 12, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase", marginBottom: 16 }}>D.C., CCCN</p>
+                <p style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.65 }}>Founder. 2012 London Olympics — USA Wrestling, Judo, Weightlifting. Treated gold medalists Kayla Harrison &amp; Jordan Burroughs. Opened the first international MaxLiving clinic in Zimbabwe.</p>
               </div>
               <div style={{ background: "#fff", borderRadius: "var(--radius-md)", padding: "40px 32px", textAlign: "center", boxShadow: "0 8px 32px rgba(14,24,44,.06)" }}>
                 <div style={{ width: 140, height: 140, borderRadius: "50%", background: "linear-gradient(135deg, rgba(42,125,108,.12), rgba(14,24,44,.06))", margin: "-80px auto 20px", border: "5px solid #fff", display: "flex", alignItems: "center", justifyContent: "center" }}>

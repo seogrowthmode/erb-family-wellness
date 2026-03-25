@@ -187,12 +187,12 @@ export default function AboutPage() {
               {[
                 {
                   name: "Dr. David Erb",
-                  creds: "D.C., CCCN, DACNB",
-                  bio: "Founder and lead clinician of Erb Family Wellness. Board-certified chiropractic neurologist with over 28 years of clinical experience. 2012 London Olympics chiropractor for USA Wrestling, Judo, and Weightlifting. Opened the first international MaxLiving Health Center in Zimbabwe, Africa. Relentless advocate for root-cause, corrective care.",
+                  creds: "D.C., CCCN",
+                  bio: "Founder and lead clinician of Erb Family Wellness. Over 28 years of clinical experience. 2012 London Olympics chiropractor for USA Wrestling, Judo, and Weightlifting. Opened the first international MaxLiving Health Center in Zimbabwe, Africa. Proud member of the MaxLiving Network. Relentless advocate for root-cause, corrective care.",
                 },
                 {
                   name: "Dr. Kimberly Erb",
-                  creds: "D.C.",
+                  creds: "D.C., DACNB",
                   bio: "Co-owner and co-founder of Erb Family Wellness. 28 years of clinical practice specializing in thermography, nutrition, pediatric, and prenatal chiropractic care. 2012 London Olympics chiropractor alongside Dr. David. Passionate about empowering women and families to take control of their health through the 5 Essentials.",
                 },
               ].map((doc) => (

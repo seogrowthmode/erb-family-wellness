@@ -99,12 +99,11 @@ export default function SchemaOrg() {
     "@type": "Person",
     name: "Dr. David Erb",
     jobTitle: "Doctor of Chiropractic",
-    description: "Board-certified chiropractic neurologist with 28+ years of clinical experience. 2012 London Olympics chiropractor for USA Wrestling, Judo, and Weightlifting.",
+    description: "28+ years of clinical experience. 2012 London Olympics chiropractor for USA Wrestling, Judo, and Weightlifting. MaxLiving Network member.",
     worksFor: { "@id": `${siteConfig.url}/#organization` },
     hasCredential: [
       { "@type": "EducationalOccupationalCredential", credentialCategory: "DC" },
       { "@type": "EducationalOccupationalCredential", credentialCategory: "CCCN" },
-      { "@type": "EducationalOccupationalCredential", credentialCategory: "DACNB" },
     ],
     alumniOf: { "@type": "EducationalOrganization", name: "Parker College of Chiropractic" },
   };

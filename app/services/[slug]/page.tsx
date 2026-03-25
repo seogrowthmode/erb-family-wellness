@@ -188,7 +188,7 @@ const servicesData: ServiceData[] = [
     ],
     conditions: ["Chronic Pain Patterns", "Autonomic Dysfunction", "Hidden Inflammation", "Organ Stress", "Nerve Interference", "Pre-Clinical Detection", "Post-Injury Assessment", "Immune Dysfunction", "Digestive Issues", "Hormonal Imbalances"],
     differentiators: [
-      { title: "Board-Certified Neurologist", desc: "Dr. Erb holds DACNB credentials — he reads thermographic data with neurological expertise most chiropractors lack." },
+      { title: "MaxLiving Network", desc: "Dr. Kimberly Erb holds DACNB credentials — he reads thermographic data with neurological expertise most chiropractors lack." },
       { title: "AlfaSight 9000", desc: "This is not a handheld infrared camera. The AlfaSight 9000 is a medical-grade 120-point system used in clinical research." },
       { title: "Diagnostic-Driven Care", desc: "Thermography findings directly guide your treatment plan — not a sales tool, but a clinical decision-making instrument." },
       { title: "Objective Progress Tracking", desc: "Repeated scans show measurable changes in nervous system function, so you see proof your care is working." },
@@ -301,7 +301,7 @@ const servicesData: ServiceData[] = [
     conditions: ["Back Pain", "Neck Pain", "Sciatica", "Herniated Discs", "Scoliosis", "Forward Head Posture", "Headaches & Migraines", "Numbness & Tingling", "Degenerative Disc Disease", "Pinched Nerves", "Poor Posture", "Whiplash", "Sports Injuries", "Joint Dysfunction"],
     differentiators: [
       { title: "2012 London Olympics", desc: "Dr. Erb served as chiropractor for USA Wrestling, Judo, and Weightlifting at the 2012 London Olympics — world-class athletes trust his hands." },
-      { title: "Board-Certified Neurologist", desc: "Dr. Erb holds DACNB and CCCN credentials, bringing neurological expertise to every spinal evaluation and adjustment." },
+      { title: "MaxLiving Network", desc: "Dr. Erb holds DACNB and CCCN credentials, bringing neurological expertise to every spinal evaluation and adjustment." },
       { title: "Correction, Not Relief", desc: "We measure structural changes with X-rays and thermography. If your spine is not changing, we adjust the plan until it does." },
       { title: "MaxLiving 5 Essentials", desc: "Spinal correction is integrated with nutrition, mindset, oxygen, and exercise for whole-body transformation." },
       { title: "Patients Fly In for Care", desc: "Patients travel from across the US and internationally for Dr. Erb's intensive correction programs — that reputation speaks volumes." },
@@ -495,7 +495,7 @@ const servicesData: ServiceData[] = [
     heroSub: "Restore nerve function without drugs or surgery. Advanced protocols that address the root cause of numbness, tingling, and burning pain.",
     metaTitle: "Neuropathy Treatment Coppell TX",
     metaDesc: "Advanced neuropathy treatment in Coppell TX. Restore nerve function without drugs or surgery. Call (972) 393-6262.",
-    stats: ["Drug-Free Protocol", "Nerve Regeneration", "Board-Certified Neurologist"],
+    stats: ["Drug-Free Protocol", "Nerve Regeneration", "MaxLiving Network"],
     label: "ABOUT NEUROPATHY TREATMENT",
     headlineLight: "Neuropathy is not",
     headlineHeavy: "a life sentence.",
@@ -524,7 +524,7 @@ const servicesData: ServiceData[] = [
     ],
     conditions: ["Peripheral Neuropathy", "Diabetic Neuropathy", "Numbness & Tingling", "Burning Pain", "Balance Problems", "Loss of Sensation", "Chemotherapy-Induced Neuropathy", "Idiopathic Neuropathy", "Carpal Tunnel Syndrome", "Sciatica", "Restless Leg Syndrome"],
     differentiators: [
-      { title: "Board-Certified Neurologist", desc: "Dr. Erb holds DACNB credentials — he understands nerve function at a level most chiropractors and even many medical doctors do not." },
+      { title: "MaxLiving Network", desc: "Dr. Kimberly Erb holds DACNB credentials — he understands nerve function at a level most chiropractors and even many medical doctors do not." },
       { title: "Multi-Modal Protocol", desc: "We combine 5+ therapies targeting different aspects of nerve healing — not a single-treatment approach that addresses only one factor." },
       { title: "Root Cause, Not Medication", desc: "We identify and address WHY your nerves are damaged. Gabapentin and Lyrica mask symptoms while nerves continue to deteriorate." },
       { title: "Advanced Technology", desc: "HBOT, SoftWave, AlfaSight thermography, and blood microscopy give us tools that most neuropathy clinics do not have." },
@@ -581,7 +581,7 @@ const servicesData: ServiceData[] = [
     conditions: ["Colic", "Ear Infections", "Torticollis", "Nursing Difficulties", "Sleep Issues", "Growing Pains", "Sports Injuries", "Scoliosis Screening", "ADHD Support", "Immune Support", "Bedwetting", "Posture Problems", "Tech Neck"],
     differentiators: [
       { title: "28 Years with Families", desc: "Dr. David and Dr. Kimberly Erb have been caring for children and families in Coppell since 1998 — they have adjusted thousands of children." },
-      { title: "Board-Certified Neurologist", desc: "Dr. Erb's DACNB credentials mean he understands pediatric neurological development at a level most chiropractors do not." },
+      { title: "MaxLiving Network", desc: "Dr. Kimberly Erb's DACNB credentials mean he understands pediatric neurological development at a level most chiropractors do not." },
       { title: "Family Practice", desc: "We care for the whole family — parents and children together. Many families have brought multiple generations to our office." },
       { title: "Extremely Gentle Techniques", desc: "Pediatric adjustments are nothing like adult adjustments. We use fingertip pressure and instrument-assisted techniques designed specifically for growing bodies." },
     ],
