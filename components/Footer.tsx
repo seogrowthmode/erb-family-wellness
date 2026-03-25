@@ -17,7 +17,7 @@ export default function Footer() {
               />
             </div>
             <p className="footer__tagline">&ldquo;The Greatest Place of Hope and Healing&rdquo;</p>
-            <p className="footer__est">Est. 1998 &middot; 2012 London Olympics</p>
+            <p className="footer__est">Est. 1998 &middot; 2012 London Olympics &middot; MaxLiving Network</p>
           </div>
           <div className="footer__col">
             <h4>Coppell</h4>
