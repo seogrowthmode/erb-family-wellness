@@ -64,7 +64,7 @@ export default function TeamPage() {
               {timelineNodes.map((node) => (
                 <div key={node.year} className="timeline__node">
                   <div className="timeline__img">
-                    <span className="timeline__img-placeholder">{node.img}</span>
+                    <span className="timeline__img-grad" style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", background: "linear-gradient(135deg, rgba(42,125,108,.12) 0%, rgba(14,24,44,.06) 100%)", fontSize: 11, color: "var(--color-teal)", fontWeight: 600, textTransform: "uppercase", letterSpacing: 1, textAlign: "center", padding: 8 }}>{node.year}</span>
                   </div>
                   <div className="timeline__dot" />
                   <div className="timeline__year">{node.year}</div>
@@ -84,7 +84,9 @@ export default function TeamPage() {
           <RevealOnScroll>
             <div className="doc-feature">
               <div className="doc-feature__photo">
-                <div className="img-placeholder">Dr. David Erb &mdash; professional editorial portrait</div>
+                <div style={{ width: "100%", minHeight: 320, background: "linear-gradient(135deg, rgba(42,125,108,.12) 0%, rgba(14,24,44,.06) 100%)", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "var(--radius-md)" }}>
+                  <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase" }}>Dr. David Erb</span>
+                </div>
               </div>
               <div className="doc-feature__name">Dr. David Erb</div>
               <div className="doc-feature__creds">D.C., CCCN</div>
@@ -124,7 +126,9 @@ export default function TeamPage() {
           <RevealOnScroll>
             <div className="doc-feature">
               <div className="doc-feature__photo">
-                <div className="img-placeholder">Dr. Kimberly Erb &mdash; professional editorial portrait</div>
+                <div style={{ width: "100%", minHeight: 320, background: "linear-gradient(135deg, rgba(42,125,108,.12) 0%, rgba(14,24,44,.06) 100%)", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "var(--radius-md)" }}>
+                  <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase" }}>Dr. Kimberly Erb</span>
+                </div>
               </div>
               <div className="doc-feature__name">Dr. Kimberly Erb</div>
               <div className="doc-feature__creds">D.C., DACNB</div>

@@ -84,8 +84,8 @@ export default function NewPatientPage() {
           </RevealOnScroll>
           <RevealOnScroll delay={200}>
             <div style={{ marginTop: 56 }}>
-              <div className="img-placeholder img-placeholder--med">
-                Modern clinic reception area. Warm, welcoming, advanced technology visible.
+              <div style={{ borderRadius: "var(--radius-md)", overflow: "hidden", minHeight: 280, background: "linear-gradient(135deg, rgba(42,125,108,.12) 0%, rgba(14,24,44,.06) 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
+                <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase" }}>Erb Family Wellness &mdash; Advanced Care</span>
               </div>
             </div>
           </RevealOnScroll>
@@ -222,8 +222,8 @@ export default function NewPatientPage() {
           </RevealOnScroll>
           <RevealOnScroll delay={100}>
             <div className="split split--50-50">
-              <div className="img-placeholder img-placeholder--tall">
-                Modern clinic interior showing HBOT chamber and advanced equipment.
+              <div style={{ borderRadius: "var(--radius-md)", overflow: "hidden", minHeight: 360, background: "linear-gradient(135deg, rgba(42,125,108,.15) 0%, rgba(14,24,44,.08) 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
+                <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase" }}>HBOT &amp; Advanced Technology</span>
               </div>
               <div>
                 <h2 className="section-headline" style={{ marginBottom: 32 }}>

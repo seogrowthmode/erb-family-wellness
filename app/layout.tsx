@@ -14,11 +14,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Chiropractor Coppell TX | Erb Family Wellness",
+    default: "Erb Family Wellness | Chiropractor in Coppell & Southlake TX",
     template: "%s | Erb Family Wellness",
   },
   description:
-    "Top-rated chiropractor in Coppell & Southlake, TX. 28 years, 2012 Olympics credentials, HBOT, SoftWave, Thermography. $67 new patient special. (972) 393-6262.",
+    "Erb Family Wellness -- advanced chiropractic care in Coppell and Southlake, TX. 28 years, 2012 Olympics. HBOT, SoftWave, thermography. $67 new patient special.",
   keywords: [
     "chiropractor coppell tx",
     "chiropractor southlake tx",

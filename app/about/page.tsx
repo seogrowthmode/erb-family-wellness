@@ -53,8 +53,8 @@ export default function AboutPage() {
                 It wasn&rsquo;t trendy at the time. Most chiropractors focused on pain relief. The Erbs
                 focused on transformation.
               </p>
-              <div className="img-placeholder img-placeholder--med" style={{ margin: "48px 0" }}>
-                Practice founding &mdash; Coppell, TX, 1998
+              <div style={{ margin: "48px 0", borderRadius: "var(--radius-md)", overflow: "hidden", minHeight: 280, background: "linear-gradient(135deg, rgba(42,125,108,.15) 0%, rgba(14,24,44,.08) 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
+                <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase" }}>Est. 1998 &mdash; Coppell, TX</span>
               </div>
               <p>
                 The results spoke for themselves. Patients didn&rsquo;t just feel better &mdash; they got off
@@ -78,8 +78,8 @@ export default function AboutPage() {
                 USA Weightlifting, and Paralympic USA Sitting Volleyball. They worked with some of the greatest
                 athletes in the world &mdash; including gold medalists Kayla Harrison and Jordan Burroughs.
               </p>
-              <div className="img-placeholder img-placeholder--med" style={{ margin: "48px 0" }}>
-                2012 London Olympics &mdash; USA Wrestling, Judo, Weightlifting
+              <div style={{ margin: "48px 0", borderRadius: "var(--radius-md)", overflow: "hidden", minHeight: 280, background: "linear-gradient(135deg, rgba(195,163,97,.2) 0%, rgba(14,24,44,.12) 100%)", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
+                <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-gold)", letterSpacing: 1, textTransform: "uppercase" }}>2012 London Olympics &mdash; Team USA</span>
               </div>
               <p>
                 Today, 28 years later, Erb Family Wellness has grown into something extraordinary: 2 locations
@@ -197,8 +197,8 @@ export default function AboutPage() {
                 },
               ].map((doc) => (
                 <div key={doc.name} style={{ background: "#fff", borderRadius: "var(--radius-md)", overflow: "hidden", boxShadow: "0 4px 20px rgba(14,24,44,.06)" }}>
-                  <div className="img-placeholder img-placeholder--tall" style={{ borderRadius: 0, minHeight: 320 }}>
-                    {doc.name} &mdash; Photo
+                  <div style={{ borderRadius: 0, minHeight: 320, background: "linear-gradient(135deg, rgba(42,125,108,.12) 0%, rgba(14,24,44,.06) 100%)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <span style={{ fontSize: 14, fontWeight: 600, color: "var(--color-teal)", letterSpacing: 1, textTransform: "uppercase" }}>{doc.name}</span>
                   </div>
                   <div style={{ padding: "32px 28px" }}>
                     <h3 style={{ fontSize: 24, fontWeight: 900, color: "var(--color-text-primary)", marginBottom: 4 }}>{doc.name}</h3>

@@ -4,13 +4,36 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { siteConfig } from "@/lib/site-config";
+
+const coppellServices = [
+  { name: "Spinal Correction", href: "/coppell/spinal-correction" },
+  { name: "HBOT", href: "/coppell/hbot" },
+  { name: "SoftWave Therapy", href: "/coppell/softwave" },
+  { name: "Spinal Decompression", href: "/coppell/spinal-decompression" },
+  { name: "Thermography", href: "/coppell/thermography" },
+  { name: "Neuropathy", href: "/coppell/neuropathy" },
+  { name: "Pediatric", href: "/coppell/pediatric" },
+  { name: "Prenatal", href: "/coppell/prenatal" },
+];
+
+const southlakeServices = [
+  { name: "Spinal Correction", href: "/southlake/spinal-correction" },
+  { name: "HBOT", href: "/southlake/hbot" },
+  { name: "SoftWave Therapy", href: "/southlake/softwave" },
+  { name: "Spinal Decompression", href: "/southlake/spinal-decompression" },
+  { name: "Thermography", href: "/southlake/thermography" },
+  { name: "Neuropathy", href: "/southlake/neuropathy" },
+  { name: "Pediatric", href: "/southlake/pediatric" },
+  { name: "Prenatal", href: "/southlake/prenatal" },
+];
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [locationsOpen, setLocationsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const locDropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
@@ -27,10 +50,18 @@ export default function Header() {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setServicesOpen(false);
       }
+      if (locDropdownRef.current && !locDropdownRef.current.contains(e.target as Node)) {
+        setLocationsOpen(false);
+      }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Determine which phone to show based on current path
+  const isSouthlake = pathname.startsWith("/southlake");
+  const phoneDisplay = isSouthlake ? "(817) 895-0075" : "(972) 393-6262";
+  const phoneTel = isSouthlake ? "8178950075" : "9723936262";
 
   return (
     <nav className={`nav${isHome ? " nav--home" : ""}${scrolled ? " scrolled" : ""}`}>
@@ -51,13 +82,11 @@ export default function Header() {
             <button
               type="button"
               className="nav__link nav__link--dropdown"
-              style={pathname.startsWith("/services") ? { color: "var(--color-navy)", fontWeight: 700 } : undefined}
+              style={pathname.startsWith("/coppell") || pathname.startsWith("/southlake") ? { color: "var(--color-navy)", fontWeight: 700 } : undefined}
               onClick={(e) => {
                 e.preventDefault();
                 if (mobileOpen) {
                   setServicesOpen(!servicesOpen);
-                } else {
-                  window.location.href = "/services";
                 }
               }}
               onTouchEnd={(e) => {
@@ -68,15 +97,53 @@ export default function Header() {
               Services <span style={{ fontSize: 10, marginLeft: 4 }}>{servicesOpen ? "\u25B2" : "\u25BC"}</span>
             </button>
             {servicesOpen && (
+              <div className="nav__dropdown-menu nav__dropdown-menu--wide">
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0 }}>
+                  <div>
+                    <div className="nav__dropdown-heading">Coppell</div>
+                    {coppellServices.map((s) => (
+                      <Link key={s.href} href={s.href} className="nav__dropdown-item" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
+                        {s.name}
+                      </Link>
+                    ))}
+                  </div>
+                  <div>
+                    <div className="nav__dropdown-heading">Southlake</div>
+                    {southlakeServices.map((s) => (
+                      <Link key={s.href} href={s.href} className="nav__dropdown-item" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
+                        {s.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="nav__dropdown" ref={locDropdownRef} onMouseEnter={() => setLocationsOpen(true)} onMouseLeave={() => setLocationsOpen(false)}>
+            <button
+              type="button"
+              className="nav__link nav__link--dropdown"
+              onClick={(e) => {
+                e.preventDefault();
+                if (mobileOpen) {
+                  setLocationsOpen(!locationsOpen);
+                }
+              }}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                setLocationsOpen(!locationsOpen);
+              }}
+            >
+              Locations <span style={{ fontSize: 10, marginLeft: 4 }}>{locationsOpen ? "\u25B2" : "\u25BC"}</span>
+            </button>
+            {locationsOpen && (
               <div className="nav__dropdown-menu">
-                <Link href="/services" className="nav__dropdown-item nav__dropdown-item--all" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
-                  All Services
+                <Link href="/coppell" className="nav__dropdown-item" onClick={() => { setLocationsOpen(false); setMobileOpen(false); }}>
+                  Coppell
                 </Link>
-                {siteConfig.services.map((s) => (
-                  <Link key={s.slug} href={"href" in s ? s.href : `/services/${s.slug}`} className="nav__dropdown-item" onClick={() => { setServicesOpen(false); setMobileOpen(false); }}>
-                    {s.name}
-                  </Link>
-                ))}
+                <Link href="/southlake" className="nav__dropdown-item" onClick={() => { setLocationsOpen(false); setMobileOpen(false); }}>
+                  Southlake
+                </Link>
               </div>
             )}
           </div>
@@ -86,8 +153,8 @@ export default function Header() {
           <Link href="/contact" className="nav__link" style={pathname === "/contact" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>Contact</Link>
         </div>
         <div className="nav__right">
-          <a href="tel:9723936262" className="nav__phone">
-            (972) 393-6262
+          <a href={`tel:${phoneTel}`} className="nav__phone">
+            {phoneDisplay}
           </a>
           <Link href="/schedule" className="nav__cta">
             Schedule Appointment

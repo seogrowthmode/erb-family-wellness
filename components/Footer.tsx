@@ -20,7 +20,7 @@ export default function Footer() {
             <p className="footer__est">Est. 1998 &middot; 2012 London Olympics &middot; MaxLiving Network</p>
           </div>
           <div className="footer__col">
-            <h4>Coppell</h4>
+            <h4><Link href="/coppell" style={{ color: "inherit", textDecoration: "none" }}>Coppell</Link></h4>
             <p>
               255 S Denton Tap Rd, Suite 200
               <br />
@@ -29,13 +29,13 @@ export default function Footer() {
             <a href="tel:9723936262">(972) 393-6262</a>
           </div>
           <div className="footer__col">
-            <h4>Southlake</h4>
+            <h4><Link href="/southlake" style={{ color: "inherit", textDecoration: "none" }}>Southlake</Link></h4>
             <p>
               1845 E Southlake Blvd, Suite 140
               <br />
               Southlake, TX 76092
             </p>
-            <a href="tel:9723936262">(972) 393-6262</a>
+            <a href="tel:8178950075">(817) 895-0075</a>
           </div>
           <div className="footer__col">
             <h4>Connect</h4>

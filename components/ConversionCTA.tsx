@@ -50,11 +50,14 @@ export default function ConversionCTA({
               </Link>
             </div>
           )}
-          <p style={{ fontSize: 18, fontWeight: 600, color: "rgba(241,236,232,.7)", marginTop: 20, textAlign: "center" }}>
-            <a href="tel:9723936262" style={{ color: "var(--color-text-light)" }}>
-              (972) 393-6262
-            </a>
-          </p>
+          <div style={{ display: "flex", gap: 24, justifyContent: "center", marginTop: 20, flexWrap: "wrap" }}>
+            <p style={{ fontSize: 16, fontWeight: 600, color: "rgba(241,236,232,.7)" }}>
+              Coppell: <a href="tel:9723936262" style={{ color: "var(--color-text-light)" }}>(972) 393-6262</a>
+            </p>
+            <p style={{ fontSize: 16, fontWeight: 600, color: "rgba(241,236,232,.7)" }}>
+              Southlake: <a href="tel:8178950075" style={{ color: "var(--color-text-light)" }}>(817) 895-0075</a>
+            </p>
+          </div>
         </RevealOnScroll>
       </div>
     </section>

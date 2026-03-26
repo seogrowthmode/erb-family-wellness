@@ -56,7 +56,7 @@ export default function HomePage() {
           </div>
           <h1 style={{ marginBottom: 28, lineHeight: 1.05 }}>
             <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 48px)", fontWeight: 300, color: "var(--color-text-light)" }}>
-              Chiropractor in Coppell TX
+              The Greatest Place of
             </span>
             <span style={{ display: "block", fontSize: "clamp(52px, 7vw, 80px)", fontWeight: 900, color: "var(--color-text-light)" }}>
               Hope
@@ -175,8 +175,8 @@ export default function HomePage() {
           <span className="label">We Understand</span>
           <RevealOnScroll>
             <h2 style={{ marginBottom: 20, lineHeight: 1.1 }}>
-              <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>Chiropractic Care</span>
-              <span style={{ display: "block", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 700 }}>in Coppell TX</span>
+              <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>Chiropractic Care in</span>
+              <span style={{ display: "block", fontSize: "clamp(40px, 5vw, 56px)", fontWeight: 700 }}>Coppell &amp; Southlake TX</span>
             </h2>
           </RevealOnScroll>
           <RevealOnScroll delay={100}>
@@ -207,9 +207,10 @@ export default function HomePage() {
               ))}
             </div>
           </RevealOnScroll>
-          <Link href="/services" className="btn btn--teal">
-            See How We&apos;re Different &rarr;
-          </Link>
+          <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/coppell" className="btn btn--teal">Coppell Services &rarr;</Link>
+            <Link href="/southlake" className="btn btn--outline" style={{ borderColor: "var(--color-teal)", color: "var(--color-teal)" }}>Southlake Services &rarr;</Link>
+          </div>
         </div>
       </section>
 
@@ -221,7 +222,7 @@ export default function HomePage() {
               <span className="label label--light">Technology No One Else Has</span>
               <h2 style={{ marginBottom: 16, lineHeight: 1.1 }}>
                 <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300, color: "var(--color-text-light)" }}>SoftWave &amp; HBOT</span>
-                <span style={{ display: "block", fontSize: "clamp(44px, 5vw, 60px)", fontWeight: 900, color: "var(--color-text-light)" }}>Therapy in Coppell TX</span>
+                <span style={{ display: "block", fontSize: "clamp(44px, 5vw, 60px)", fontWeight: 900, color: "var(--color-text-light)" }}>Advanced Therapy</span>
               </h2>
               <p style={{ fontSize: 16, color: "rgba(241,236,232,.65)", maxWidth: 500, lineHeight: 1.7 }}>This is why patients travel from around the world.</p>
             </div>
@@ -253,9 +254,10 @@ export default function HomePage() {
         </div>
         <RevealOnScroll>
           <div style={{ textAlign: "center", marginTop: 56, position: "relative", zIndex: 1 }}>
-            <Link href="/services" className="btn btn--teal">
-              Explore All Technology &amp; Services &rarr;
-            </Link>
+            <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
+              <Link href="/coppell" className="btn btn--teal">Coppell Services &rarr;</Link>
+              <Link href="/southlake" className="btn btn--outline" style={{ borderColor: "rgba(241,236,232,.4)", color: "var(--color-text-light)" }}>Southlake Services &rarr;</Link>
+            </div>
           </div>
         </RevealOnScroll>
       </section>
@@ -267,14 +269,14 @@ export default function HomePage() {
           <RevealOnScroll>
             <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "36px 48px", marginBottom: 28 }}>
               {[
-                { name: "Spinal Correction", href: "/services/spinal-correction" },
-                { name: "HBOT", href: "/services/hbot" },
-                { name: "SoftWave", href: "/services/softwave" },
-                { name: "Thermography", href: "/services/thermography" },
-                { name: "Blood Testing", href: "/services/blood-microscopy" },
-                { name: "Neuropathy", href: "/services/neuropathy" },
-                { name: "Pediatric", href: "/services/pediatric" },
-                { name: "Prenatal", href: "/services/prenatal" },
+                { name: "Spinal Correction", href: "/coppell/spinal-correction" },
+                { name: "HBOT", href: "/coppell/hbot" },
+                { name: "SoftWave", href: "/coppell/softwave" },
+                { name: "Thermography", href: "/coppell/thermography" },
+                { name: "Blood Testing", href: "/coppell/blood-microscopy" },
+                { name: "Neuropathy", href: "/coppell/neuropathy" },
+                { name: "Pediatric", href: "/coppell/pediatric" },
+                { name: "Prenatal", href: "/coppell/prenatal" },
               ].map((svc) => (
                 <Link key={svc.name} href={svc.href} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, transition: "transform .3s ease" }}>
                   <div style={{ width: 56, height: 56, borderRadius: "50%", background: "rgba(42,125,108,.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -327,7 +329,7 @@ export default function HomePage() {
             <RevealOnScroll>
               <h2 style={{ marginBottom: 16, lineHeight: 1.15 }}>
                 <span style={{ display: "block", fontSize: "clamp(32px, 3.5vw, 40px)", fontWeight: 300 }}>Spinal Correction</span>
-                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 52px)", fontWeight: 700 }}>Specialists in Coppell TX</span>
+                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 52px)", fontWeight: 700 }}>Specialists in DFW</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -343,7 +345,7 @@ export default function HomePage() {
               ].map((node, i) => (
                 <div key={i} className="timeline__node">
                   <div className="timeline__img">
-                    <span className="timeline__img-placeholder">{node.img}</span>
+                    <span className="timeline__img-grad" style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%", background: "linear-gradient(135deg, rgba(42,125,108,.12) 0%, rgba(14,24,44,.06) 100%)", fontSize: 11, color: "var(--color-teal)", fontWeight: 600, textTransform: "uppercase", letterSpacing: 1, textAlign: "center", padding: 8 }}>{node.year}</span>
                   </div>
                   <div className="timeline__dot" />
                   <div className="timeline__year">{node.year}</div>
@@ -418,7 +420,7 @@ export default function HomePage() {
             <RevealOnScroll>
               <h2 style={{ lineHeight: 1.1, marginBottom: 16 }}>
                 <span style={{ display: "block", fontSize: "clamp(28px, 3.5vw, 44px)", fontWeight: 300 }}>Neuropathy &amp; Wellness</span>
-                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 900, color: "var(--color-teal)" }}>Treatment in Coppell TX</span>
+                <span style={{ display: "block", fontSize: "clamp(36px, 4.5vw, 56px)", fontWeight: 900, color: "var(--color-teal)" }}>Treatment in DFW</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -455,7 +457,7 @@ export default function HomePage() {
             <RevealOnScroll>
               <h2 style={{ marginBottom: 16, lineHeight: 1.15 }}>
                 <span className="title-light">Pediatric &amp; Prenatal</span>
-                <span className="title-heavy">Chiropractic in Coppell TX</span>
+                <span className="title-heavy">Chiropractic Care</span>
               </h2>
             </RevealOnScroll>
           </div>
@@ -504,7 +506,7 @@ export default function HomePage() {
               <RevealOnScroll>
                 <h2 style={{ lineHeight: 1.15, marginBottom: 16 }}>
                   <span className="title-light">Spinal Decompression &amp;</span>
-                  <span className="title-heavy">Thermography Coppell TX</span>
+                  <span className="title-heavy">Thermography</span>
                 </h2>
               </RevealOnScroll>
               <RevealOnScroll delay={100}>
@@ -537,7 +539,7 @@ export default function HomePage() {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32 }} className="loc-grid">
               <div className="loc-card">
                 <div className="loc-card__badge">Primary Location</div>
-                <h3 className="loc-card__name">Coppell</h3>
+                <Link href="/coppell" style={{ textDecoration: "none" }}><h3 className="loc-card__name">Coppell</h3></Link>
                 <div className="loc-card__detail">
                   <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--color-teal)" fill="none" strokeWidth="1.5" style={{ minWidth: 18, marginTop: 2 }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                   <span>255 S Denton Tap Rd, Suite 200<br />Coppell, TX 75019</span>
@@ -553,14 +555,18 @@ export default function HomePage() {
               </div>
               <div className="loc-card" style={{ marginTop: 24 }}>
                 <div className="loc-card__badge">Second Location</div>
-                <h3 className="loc-card__name">Southlake</h3>
+                <Link href="/southlake" style={{ textDecoration: "none" }}><h3 className="loc-card__name">Southlake</h3></Link>
                 <div className="loc-card__detail">
                   <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--color-teal)" fill="none" strokeWidth="1.5" style={{ minWidth: 18, marginTop: 2 }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
                   <span>1845 E Southlake Blvd, Suite 140<br />Southlake, TX 76092</span>
                 </div>
                 <div className="loc-card__detail">
                   <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--color-teal)" fill="none" strokeWidth="1.5" style={{ minWidth: 18, marginTop: 2 }}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
-                  <a href="tel:9723936262" style={{ color: "var(--color-teal)", fontWeight: 600 }}>(972) 393-6262</a>
+                  <a href="tel:8178950075" style={{ color: "var(--color-teal)", fontWeight: 600 }}>(817) 895-0075</a>
+                </div>
+                <div className="loc-card__hours">
+                  <h4>Hours</h4>
+                  <p>Mon: 8:00-10:00 AM, 3:30-6:00 PM<br />Tue: 11:00 AM-1:00 PM<br />Wed: 8:00-10:00 AM, 3:30-6:00 PM<br />Thu: 11:00 AM-1:00 PM, 4:00-5:30 PM<br />Fri: 7:30-10:00 AM<br />Sat-Sun: Closed</p>
                 </div>
               </div>
             </div>

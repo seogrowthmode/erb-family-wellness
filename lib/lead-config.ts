@@ -14,7 +14,7 @@ export const LOCATIONS = {
     workflowId: 'f03712a7-bc3e-467c-8e16-e86cefef65f6',
     rwEmbedId: '3410a5516c468b63432c9a2b74b389abd297',
     address: '1845 E Southlake Blvd, Suite 140, Southlake, TX 76092',
-    phone: '(972) 393-6262',
+    phone: '(817) 895-0075',
   },
 } as const;
 

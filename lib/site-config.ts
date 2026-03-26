@@ -3,21 +3,94 @@ export const siteConfig = {
   shortName: "Erb Family Wellness",
   tagline: "The Greatest Place of Hope and Healing",
   description:
-    "Erb Family Wellness in Coppell, TX offers corrective chiropractic care, SoftWave therapy, spinal decompression, hyperbaric oxygen therapy, and more. Serving families since 1998.",
+    "Erb Family Wellness provides corrective chiropractic care, SoftWave therapy, spinal decompression, hyperbaric oxygen therapy, and more at two DFW locations in Coppell and Southlake, TX. Serving families since 1998.",
   url: "https://www.erbfamilywellness.com",
-  phone: "(972) 393-6262",
   email: "derb@erbfamilywellness.com",
+  doctor: {
+    name: "Dr. David Erb",
+    credentials: "DC",
+    experience: "Since 1998",
+  },
+  social: {
+    facebook: "https://www.facebook.com/ErbFamilyCoppell",
+    instagram: "https://www.instagram.com/erbfamilywellness/",
+    rumble: "https://rumble.com/c/ErbFamilyWellness",
+    linkedin: "https://www.linkedin.com/in/drdaviderb/",
+  },
+  locations: {
+    coppell: {
+      name: "Erb Family Wellness - Coppell",
+      phone: "(972) 393-6262",
+      phoneTel: "9723936262",
+      address: {
+        street: "255 S Denton Tap Rd, Suite 200",
+        city: "Coppell",
+        state: "TX",
+        zip: "75019",
+        full: "255 S Denton Tap Rd, Suite 200, Coppell, TX 75019",
+      },
+      geo: { latitude: 32.9582, longitude: -97.0038 },
+      hours: {
+        monday: "8:00 AM - 10:30 AM, 3:30 PM - 6:00 PM",
+        tuesday: "12:00 PM - 3:00 PM",
+        wednesday: "8:00 AM - 10:30 AM, 3:30 PM - 6:00 PM",
+        thursday: "2:30 PM - 5:30 PM",
+        friday: "7:30 AM - 10:30 AM",
+        saturday: "Closed",
+        sunday: "Closed",
+      },
+      serviceArea: [
+        "Coppell",
+        "Lewisville",
+        "Flower Mound",
+        "Carrollton",
+        "Grapevine",
+        "Irving",
+        "Valley Ranch",
+        "Las Colinas",
+        "Dallas",
+      ],
+    },
+    southlake: {
+      name: "Erb Family Wellness - Southlake",
+      phone: "(817) 895-0075",
+      phoneTel: "8178950075",
+      address: {
+        street: "1845 E Southlake Blvd, Suite 140",
+        city: "Southlake",
+        state: "TX",
+        zip: "76092",
+        full: "1845 E Southlake Blvd, Suite 140, Southlake, TX 76092",
+      },
+      geo: { latitude: 32.9413, longitude: -97.1342 },
+      hours: {
+        monday: "8:00 AM - 10:00 AM, 3:30 PM - 6:00 PM",
+        tuesday: "11:00 AM - 1:00 PM",
+        wednesday: "8:00 AM - 10:00 AM, 3:30 PM - 6:00 PM",
+        thursday: "11:00 AM - 1:00 PM, 4:00 PM - 5:30 PM",
+        friday: "7:30 AM - 10:00 AM",
+        saturday: "Closed",
+        sunday: "Closed",
+      },
+      serviceArea: [
+        "Southlake",
+        "Keller",
+        "Colleyville",
+        "Trophy Club",
+        "Westlake",
+        "Grapevine",
+        "North Richland Hills",
+      ],
+    },
+  },
+  // Legacy flat fields for backward compat
+  phone: "(972) 393-6262",
   address: {
     street: "255 S Denton Tap Rd, Suite 200",
     city: "Coppell",
     state: "TX",
     zip: "75019",
     full: "255 S Denton Tap Rd, Suite 200, Coppell, TX 75019",
-  },
-  doctor: {
-    name: "Dr. David Erb",
-    credentials: "DC",
-    experience: "Since 1998",
   },
   hours: {
     monday: "8:00 AM - 10:30 AM, 3:30 PM - 6:00 PM",
@@ -28,12 +101,6 @@ export const siteConfig = {
     saturday: "Closed",
     sunday: "Closed",
   },
-  social: {
-    facebook: "https://www.facebook.com/ErbFamilyCoppell",
-    instagram: "https://www.instagram.com/erbfamilywellness/",
-    rumble: "https://rumble.com/c/ErbFamilyWellness",
-    linkedin: "https://www.linkedin.com/in/drdaviderb/",
-  },
   services: [
     { name: "Spinal Correction", slug: "spinal-correction" },
     { name: "Hyperbaric Oxygen Therapy", slug: "hbot" },
@@ -43,20 +110,28 @@ export const siteConfig = {
     { name: "Neuropathy Treatment", slug: "neuropathy" },
     { name: "Pediatric Chiropractic", slug: "pediatric" },
     { name: "Prenatal Chiropractic", slug: "prenatal" },
-    { name: "Back Pain Treatment", slug: "back-pain", href: "/conditions/back-pain" },
-    { name: "Neck Pain Treatment", slug: "neck-pain", href: "/conditions/neck-pain" },
-    { name: "Sciatica Treatment", slug: "sciatica", href: "/conditions/sciatica" },
+    { name: "Back Pain Treatment", slug: "back-pain" },
+    { name: "Neck Pain Treatment", slug: "neck-pain" },
+    { name: "Sciatica Treatment", slug: "sciatica" },
   ],
   serviceArea: [
     "Coppell",
+    "Southlake",
     "Lewisville",
     "Flower Mound",
     "Carrollton",
     "Grapevine",
     "Irving",
-    "Southlake",
     "Valley Ranch",
     "Las Colinas",
     "Dallas",
+    "Keller",
+    "Colleyville",
   ],
 } as const;
+
+export type LocationKey = "coppell" | "southlake";
+
+export function getLocationConfig(location: LocationKey) {
+  return siteConfig.locations[location];
+}
