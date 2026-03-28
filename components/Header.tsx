@@ -151,6 +151,7 @@ export default function Header() {
           <Link href="/testimonials" className="nav__link" style={pathname === "/testimonials" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>Testimonials</Link>
           <Link href="/new-patient" className="nav__link" style={pathname === "/new-patient" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>New Patients</Link>
           <Link href="/contact" className="nav__link" style={pathname === "/contact" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>Contact</Link>
+          <a href="http://erbfamilyevents.com" className="nav__link" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Patient Resources</a>
         </div>
         <div className="nav__right">
           <a href={`tel:${phoneTel}`} className="nav__phone">
