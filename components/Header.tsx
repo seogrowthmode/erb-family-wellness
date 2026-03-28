@@ -32,8 +32,10 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [locationsOpen, setLocationsOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const locDropdownRef = useRef<HTMLDivElement>(null);
+  const aboutDropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
@@ -52,6 +54,9 @@ export default function Header() {
       }
       if (locDropdownRef.current && !locDropdownRef.current.contains(e.target as Node)) {
         setLocationsOpen(false);
+      }
+      if (aboutDropdownRef.current && !aboutDropdownRef.current.contains(e.target as Node)) {
+        setAboutOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -147,11 +152,21 @@ export default function Header() {
               </div>
             )}
           </div>
-          <Link href="/team" className="nav__link" style={pathname === "/team" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>Team</Link>
+          <div className="nav__dropdown" ref={aboutDropdownRef} onMouseEnter={() => setAboutOpen(true)} onMouseLeave={() => setAboutOpen(false)}>
+            <Link href="/about" className="nav__link nav__link--dropdown" style={pathname === "/about" || pathname === "/team" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined}>
+              About <span style={{ fontSize: 10, marginLeft: 4 }}>{aboutOpen ? "\u25B2" : "\u25BC"}</span>
+            </Link>
+            {aboutOpen && (
+              <div className="nav__dropdown-menu">
+                <Link href="/about" className="nav__dropdown-item" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Our Story</Link>
+                <Link href="/team" className="nav__dropdown-item" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Meet the Team</Link>
+                <a href="http://erbfamilyevents.com" className="nav__dropdown-item" target="_blank" rel="noopener noreferrer" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Patient Resources</a>
+              </div>
+            )}
+          </div>
           <Link href="/testimonials" className="nav__link" style={pathname === "/testimonials" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>Testimonials</Link>
           <Link href="/new-patient" className="nav__link" style={pathname === "/new-patient" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>New Patients</Link>
           <Link href="/contact" className="nav__link" style={pathname === "/contact" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>Contact</Link>
-          <a href="http://erbfamilyevents.com" className="nav__link" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Patient Resources</a>
         </div>
         <div className="nav__right">
           <a href={`tel:${phoneTel}`} className="nav__phone">
