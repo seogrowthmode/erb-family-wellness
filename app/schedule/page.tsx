@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
-export default function SchedulePage() {
+function ScheduleContent() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const preselectedLocation = searchParams.get("location") || "";
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
@@ -107,8 +110,8 @@ export default function SchedulePage() {
                   <div className="form-row">
                     <div className="form-group form-group--full">
                       <label htmlFor="location">Preferred Location</label>
-                      <select id="location" name="location" required defaultValue="">
-                        <option value="" disabled>Select a location</option>
+                      <select id="location" name="location" required defaultValue={preselectedLocation || ""}>
+                        {!preselectedLocation && <option value="" disabled>Select a location</option>}
                         <option value="coppell">Coppell &mdash; 255 S Denton Tap Rd</option>
                         <option value="southlake">Southlake &mdash; 1845 E Southlake Blvd</option>
                       </select>
@@ -228,5 +231,13 @@ export default function SchedulePage() {
         </div>
       </section>
     </>
+  );
+}
+
+export default function SchedulePage() {
+  return (
+    <Suspense fallback={<div style={{ padding: 80, textAlign: "center" }}>Loading...</div>}>
+      <ScheduleContent />
+    </Suspense>
   );
 }

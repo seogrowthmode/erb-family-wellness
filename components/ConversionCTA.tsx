@@ -42,10 +42,10 @@ export default function ConversionCTA({
           </h2>
           {showButtons && (
             <div style={{ display: "flex", gap: 16, justifyContent: "center", marginTop: 36, flexWrap: "wrap" }}>
-              <Link href="/schedule" className="btn btn--teal">
+              <Link href="/schedule?location=coppell" className="btn btn--teal">
                 Book at Coppell &rarr;
               </Link>
-              <Link href="/schedule" className="btn btn--outline">
+              <Link href="/schedule?location=southlake" className="btn btn--outline">
                 Book at Southlake &rarr;
               </Link>
             </div>
