@@ -38,6 +38,12 @@ export default function Footer() {
             <a href="tel:8178950075">(817) 895-0075</a>
           </div>
           <div className="footer__col">
+            <h4>Resources</h4>
+            <Link href="/patient-resources" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Patient Resources</Link>
+            <Link href="/privacy" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Privacy Policy</Link>
+            <Link href="/terms" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Terms of Use</Link>
+          </div>
+          <div className="footer__col">
             <h4>Connect</h4>
             <a href="tel:9723936262">(972) 393-6262</a>
             <a href="mailto:derb@erbfamilywellness.com">derb@erbfamilywellness.com</a>
@@ -56,11 +62,6 @@ export default function Footer() {
           <p className="footer__copy">
             &copy; {new Date().getFullYear()} Erb Family Wellness &middot; Erb Family Chiropractic Center PC
           </p>
-          <div className="footer__legal" style={{ display: "flex", gap: 16, fontSize: 13, flexWrap: "wrap" }}>
-            <Link href="/patient-resources" style={{ color: "inherit", textDecoration: "none" }}>Patient Resources</Link>
-            <Link href="/privacy" style={{ color: "inherit", textDecoration: "none" }}>Privacy</Link>
-            <Link href="/terms" style={{ color: "inherit", textDecoration: "none" }}>Terms</Link>
-          </div>
           <div className="footer__badges">
             <span className="footer__badge">MaxLiving</span>
             <span className="footer__badge">CareCredit</span>
