@@ -56,6 +56,11 @@ export default function Footer() {
           <p className="footer__copy">
             &copy; {new Date().getFullYear()} Erb Family Wellness &middot; Erb Family Chiropractic Center PC
           </p>
+          <div className="footer__legal" style={{ display: "flex", gap: 16, fontSize: 13, flexWrap: "wrap" }}>
+            <Link href="/patient-resources" style={{ color: "inherit", textDecoration: "none" }}>Patient Resources</Link>
+            <Link href="/privacy" style={{ color: "inherit", textDecoration: "none" }}>Privacy</Link>
+            <Link href="/terms" style={{ color: "inherit", textDecoration: "none" }}>Terms</Link>
+          </div>
           <div className="footer__badges">
             <span className="footer__badge">MaxLiving</span>
             <span className="footer__badge">CareCredit</span>
