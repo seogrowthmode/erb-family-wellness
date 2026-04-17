@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
           <div className="footer__col">
             <h4>Resources</h4>
-            <Link href="/patient-resources" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Patient Resources</Link>
+            <a href="https://erbfamilyevents.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Patient Resources</a>
             <Link href="/privacy" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Privacy Policy</Link>
             <Link href="/terms" style={{ color: "inherit", textDecoration: "none", display: "block", marginBottom: 6 }}>Terms of Use</Link>
           </div>

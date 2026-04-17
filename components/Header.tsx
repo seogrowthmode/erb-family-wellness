@@ -82,7 +82,6 @@ export default function Header() {
           />
         </Link>
         <div className={`nav__links${mobileOpen ? " open" : ""}`}>
-          <Link href="/about" className="nav__link" style={pathname === "/about" ? { color: "var(--color-navy)", fontWeight: 700 } : undefined} onClick={() => setMobileOpen(false)}>About</Link>
           <div className="nav__dropdown" ref={dropdownRef} onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
             <button
               type="button"
@@ -160,7 +159,7 @@ export default function Header() {
               <div className="nav__dropdown-menu">
                 <Link href="/about" className="nav__dropdown-item" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Our Story</Link>
                 <Link href="/team" className="nav__dropdown-item" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Meet the Team</Link>
-                <a href="http://erbfamilyevents.com" className="nav__dropdown-item" target="_blank" rel="noopener noreferrer" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Patient Resources</a>
+                <a href="https://erbfamilyevents.com/" className="nav__dropdown-item" target="_blank" rel="noopener noreferrer" onClick={() => { setAboutOpen(false); setMobileOpen(false); }}>Patient Resources</a>
               </div>
             )}
           </div>
