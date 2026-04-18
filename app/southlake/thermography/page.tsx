@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Thermography Southlake TX - Erb Wellness",
   description:
     "AlfaSight 9000 whole body thermography in Southlake, TX. 120-point body mapping reveals hidden dysfunction. Zero radiation. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/thermography/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/thermography" },
 };
 
 const faqs = [

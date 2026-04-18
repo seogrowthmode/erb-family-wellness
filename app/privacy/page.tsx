@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Erb Family Wellness Coppell TX",
   description:
     "Privacy policy for Erb Family Wellness. How we collect, use, and protect your personal and health information in compliance with HIPAA.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/privacy/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/privacy" },
 };
 
 export default function PrivacyPage() {

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "About Us | Erb Family Wellness Coppell TX",
   description:
     "Meet Dr. David & Dr. Kimberly Erb, 2012 Olympic chiropractors in Coppell TX. 28 years of corrective care. Call (972) 393-6262.",
+  alternates: { canonical: "https://www.erbfamilywellness.com/about" },
 };
 
 export default function AboutPage() {

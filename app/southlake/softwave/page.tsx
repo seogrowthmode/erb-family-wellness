@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "SoftWave Therapy Southlake TX - Erb Wellness",
   description:
     "SoftWave tissue regeneration therapy in Southlake, TX. Unfocused acoustic waves activate stem cells, reduce pain without surgery. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/softwave/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/softwave" },
 };
 
 const faqs = [

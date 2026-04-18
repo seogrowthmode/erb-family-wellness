@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Chiropractic Care Southlake TX - Erb Wellness",
   description:
     "Chiropractic care in Southlake, TX. Dr. David Erb provides corrective adjustments, not just symptom relief. Carroll ISD families trust us. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/chiropractic/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/chiropractic" },
 };
 
 const faqs = [

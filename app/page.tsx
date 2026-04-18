@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import FormCard from "@/components/FormCard";
 import FAQ from "@/components/FAQ";
 import SchemaOrg from "@/components/SchemaOrg";
+
+export const metadata: Metadata = {
+  title: "Chiropractor Coppell & Southlake TX | Erb Family Wellness",
+  description:
+    "Erb Family Wellness — advanced chiropractic care in Coppell & Southlake, TX. 28 years, 2012 Olympics. HBOT, SoftWave, thermography. $67 new patient visit.",
+  alternates: { canonical: "https://www.erbfamilywellness.com/" },
+};
 
 const homeFAQs = [
   { question: "What's included in the $67 new patient visit?", answer: "Your $67 new patient visit includes a comprehensive consultation, examination, any necessary X-rays, and your first adjustment. Dr. Erb will identify the root cause of your health concerns — not just treat symptoms." },

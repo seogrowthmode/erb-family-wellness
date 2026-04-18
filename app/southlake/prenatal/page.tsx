@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Prenatal Chiropractor Southlake TX - Erb",
   description:
     "Prenatal chiropractor in Southlake, TX. Safe, gentle chiropractic care for expecting mothers. Dr. Kimberly Erb specializes in pregnancy care. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/prenatal/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/prenatal" },
 };
 
 const faqs = [

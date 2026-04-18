@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Terms of Use | Erb Family Wellness Coppell TX",
   description:
     "Terms of use for erbfamilywellness.com. Website disclaimers, medical advice limitations, intellectual property, and user conduct.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/terms/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/terms" },
 };
 
 export default function TermsPage() {

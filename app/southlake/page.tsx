@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Chiropractor Southlake TX - Erb Family Wellness",
   description:
     "Top-rated chiropractor in Southlake, TX. Dr. David Erb -- 28 years, 2012 Olympics. HBOT, SoftWave, thermography, spinal correction. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake" },
 };
 
 const southlakeServices = [

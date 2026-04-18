@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "HBOT Southlake TX - Erb Family Wellness",
   description:
     "Hyperbaric oxygen therapy in Southlake, TX. Breathe 100% oxygen in a pressurized chamber for up to 800% stem cell growth. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/hbot/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/hbot" },
 };
 
 const faqs = [

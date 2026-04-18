@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Pediatric Chiropractor Southlake TX - Erb",
   description:
     "Pediatric chiropractor in Southlake, TX. Gentle care for infants, children, and Carroll ISD student athletes. Dr. Kimberly Erb specializes in kids. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/pediatric/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/pediatric" },
 };
 
 const faqs = [

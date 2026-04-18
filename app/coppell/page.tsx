@@ -8,10 +8,11 @@ export const metadata: Metadata = {
   title: "Chiropractor Coppell TX - Erb Family Wellness",
   description:
     "Top-rated chiropractor in Coppell, TX. Dr. David Erb -- 28 years, 2012 Olympics. HBOT, SoftWave, thermography, spinal correction. (972) 393-6262.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/coppell/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/coppell" },
 };
 
 const coppellServices = [
+  { name: "Chiropractic Care", href: "/coppell/chiropractic", desc: "Corrective chiropractic that restores spinal structure for lasting health." },
   { name: "Spinal Correction", href: "/coppell/spinal-correction", desc: "Advanced corrective chiropractic care. Structural correction, not just pain relief." },
   { name: "Hyperbaric Oxygen Therapy", href: "/coppell/hbot", desc: "800% stem cell growth. Neurological recovery and cellular regeneration." },
   { name: "SoftWave Therapy", href: "/coppell/softwave", desc: "FDA-cleared acoustic wave therapy. Stem cell activation without surgery." },
@@ -20,6 +21,19 @@ const coppellServices = [
   { name: "Neuropathy Treatment", href: "/coppell/neuropathy", desc: "Restore nerve function without drugs or surgery." },
   { name: "Pediatric Chiropractic", href: "/coppell/pediatric", desc: "Gentle care for infants, children, and teens." },
   { name: "Prenatal Chiropractic", href: "/coppell/prenatal", desc: "Safe, specialized care for expecting mothers." },
+  { name: "Corrective Exercises", href: "/coppell/corrective-exercises", desc: "Home exercise plans that stabilize and reinforce adjustments between visits." },
+  { name: "Nutrition Counseling", href: "/coppell/nutrition", desc: "MaxLiving 5 Essentials nutrition for whole-family wellness." },
+  { name: "Detoxification", href: "/coppell/detox", desc: "Toxin testing, far infrared sauna, and targeted detox protocols." },
+];
+
+const coppellConditions = [
+  { name: "Back Pain", href: "/coppell/back-pain", desc: "Corrective chiropractic relief for acute and chronic back pain." },
+  { name: "Neck Pain", href: "/coppell/neck-pain", desc: "Restore cervical structure and alleviate recurring neck tension." },
+  { name: "Sciatica", href: "/coppell/sciatica", desc: "Address the root cause of sciatic nerve pain and radiating leg symptoms." },
+  { name: "Headaches & Migraines", href: "/coppell/headaches", desc: "Upper-cervical care for tension headaches and migraine relief." },
+  { name: "Neuropathy", href: "/coppell/neuropathy-condition", desc: "Non-drug nerve restoration for peripheral neuropathy." },
+  { name: "Scoliosis", href: "/coppell/scoliosis", desc: "Structural correction and bracing alternatives for spinal curvature." },
+  { name: "Herniated Disc", href: "/coppell/herniated-disc", desc: "Spinal decompression and corrective care for disc injuries." },
 ];
 
 const coppellFAQs = [
@@ -238,6 +252,31 @@ export default function CoppellPage() {
                 <Link key={svc.href} href={svc.href} style={{ display: "block", background: "#fff", borderRadius: "var(--radius-md)", padding: "32px 28px", boxShadow: "0 4px 20px rgba(14,24,44,.06)", transition: "transform .3s ease, box-shadow .3s ease", textDecoration: "none" }}>
                   <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text-primary)", marginBottom: 8 }}>{svc.name}</h3>
                   <p style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.6 }}>{svc.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* CONDITIONS */}
+      <section style={{ padding: "100px 0", background: "#fff" }}>
+        <div className="container-erb">
+          <div style={{ textAlign: "center", marginBottom: 56 }}>
+            <span className="label">Conditions We Treat</span>
+            <RevealOnScroll>
+              <h2 style={{ lineHeight: 1.15, marginBottom: 16 }}>
+                <span style={{ display: "block", fontSize: "clamp(28px, 3vw, 36px)", fontWeight: 300 }}>Root-cause care for</span>
+                <span style={{ display: "block", fontSize: "clamp(34px, 4vw, 48px)", fontWeight: 700 }}>Coppell patients</span>
+              </h2>
+            </RevealOnScroll>
+          </div>
+          <RevealOnScroll>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 24 }} className="services-loc-grid">
+              {coppellConditions.map((cond) => (
+                <Link key={cond.href} href={cond.href} style={{ display: "block", background: "var(--color-cream)", borderRadius: "var(--radius-md)", padding: "32px 28px", boxShadow: "0 4px 20px rgba(14,24,44,.04)", transition: "transform .3s ease, box-shadow .3s ease", textDecoration: "none" }}>
+                  <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--color-text-primary)", marginBottom: 8 }}>{cond.name}</h3>
+                  <p style={{ fontSize: 14, color: "var(--color-text-secondary)", lineHeight: 1.6 }}>{cond.desc}</p>
                 </Link>
               ))}
             </div>

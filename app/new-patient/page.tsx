@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "$67 New Patient Special | Erb Family Wellness",
   description:
     "$67 new patient visit in Coppell TX includes consultation, exam, X-rays & first adjustment. Call (972) 393-6262 to book.",
+  alternates: { canonical: "https://www.erbfamilywellness.com/new-patient" },
 };
 
 const faqItems = [

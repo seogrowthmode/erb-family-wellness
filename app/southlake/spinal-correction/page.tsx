@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Spinal Correction Southlake TX - Erb Wellness",
   description:
     "Spinal correction in Southlake, TX. Advanced structural realignment with X-ray guided care. 28 years experience. Call (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/spinal-correction/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/spinal-correction" },
 };
 
 const faqs = [

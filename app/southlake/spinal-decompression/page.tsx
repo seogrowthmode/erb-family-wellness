@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Spinal Decompression Southlake TX - Erb",
   description:
     "Non-surgical spinal decompression in Southlake, TX. Herniated disc and sciatica relief without surgery. 86%+ success rate. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/spinal-decompression/" },
+  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/spinal-decompression" },
 };
 
 const faqs = [
