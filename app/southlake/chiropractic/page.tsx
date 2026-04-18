@@ -180,7 +180,7 @@ export default function SouthlakeChiropracticPage() {
       <section style={{ padding: "40px 0", background: "var(--color-cream)", textAlign: "center" }}>
         <div className="container-erb">
           <p style={{ fontSize: 15, color: "var(--color-text-secondary)" }}>
-            This page is for our Southlake location. Looking for <Link href="/coppell/spinal-correction" style={{ color: "var(--color-teal)", fontWeight: 600 }}>chiropractic care in Coppell</Link>?
+            This page is for our Southlake location. Looking for <Link href="/coppell/chiropractic" style={{ color: "var(--color-teal)", fontWeight: 600 }}>chiropractic care in Coppell</Link>?
           </p>
         </div>
       </section>

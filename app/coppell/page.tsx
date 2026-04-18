@@ -24,6 +24,7 @@ const coppellServices = [
   { name: "Corrective Exercises", href: "/coppell/corrective-exercises", desc: "Home exercise plans that stabilize and reinforce adjustments between visits." },
   { name: "Nutrition Counseling", href: "/coppell/nutrition", desc: "MaxLiving 5 Essentials nutrition for whole-family wellness." },
   { name: "Detoxification", href: "/coppell/detox", desc: "Toxin testing, far infrared sauna, and targeted detox protocols." },
+  { name: "Far Infrared Sauna", href: "/coppell/far-infrared-sauna", desc: "Deep cellular detox and pain relief using therapeutic infrared heat." },
 ];
 
 const coppellConditions = [

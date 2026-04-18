@@ -8,7 +8,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import StatsBar from "@/components/StatsBar";
 
 // ---- SERVICE AND CONDITION SLUGS ----
-const serviceSlugs = ["hbot", "softwave", "thermography", "blood-microscopy", "spinal-correction", "spinal-decompression", "corrective-exercises", "nutrition", "neuropathy", "pediatric", "prenatal", "chiropractic", "detox"];
+const serviceSlugs = ["hbot", "softwave", "thermography", "blood-microscopy", "spinal-correction", "spinal-decompression", "corrective-exercises", "nutrition", "neuropathy", "pediatric", "prenatal", "chiropractic", "detox", "far-infrared-sauna"];
 const conditionSlugs = ["back-pain", "neck-pain", "sciatica", "headaches", "neuropathy-condition", "scoliosis", "herniated-disc"];
 
 const allSlugs = [...serviceSlugs, ...conditionSlugs];
@@ -33,6 +33,7 @@ const titleMap: Record<string, string> = {
   prenatal: "Prenatal Chiropractic Coppell TX",
   chiropractic: "Chiropractic Care Coppell TX",
   detox: "Detox Services Coppell TX",
+  "far-infrared-sauna": "Far Infrared Sauna Coppell TX",
   "back-pain": "Back Pain Treatment Coppell TX",
   "neck-pain": "Neck Pain Treatment Coppell TX",
   sciatica: "Sciatica Treatment Coppell TX",
@@ -56,6 +57,7 @@ const nameMap: Record<string, string> = {
   prenatal: "Prenatal Chiropractic",
   chiropractic: "Chiropractic Care",
   detox: "Detox Services",
+  "far-infrared-sauna": "Far Infrared Sauna",
   "back-pain": "Back Pain Treatment",
   "neck-pain": "Neck Pain Treatment",
   sciatica: "Sciatica Treatment",
