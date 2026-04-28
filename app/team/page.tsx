@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Our Team | Erb Family Wellness Coppell TX",
   description:
     "Meet Dr. David Erb (DC, DACNB), Dr. Kimberly Erb & 13 team members. 2012 Olympic chiropractors in Coppell TX. (972) 393-6262.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/team" },
+  alternates: { canonical: "https://erbfamilywellness.com/team" },
 };
 
 const timelineNodes = [

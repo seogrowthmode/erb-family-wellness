@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "The Greatest Place of Hope and Healing",
   description:
     "Erb Family Wellness provides corrective chiropractic care, SoftWave therapy, spinal decompression, hyperbaric oxygen therapy, and more at two DFW locations in Coppell and Southlake, TX. Serving families since 1998.",
-  url: "https://www.erbfamilywellness.com",
+  url: "https://erbfamilywellness.com",
   email: "derb@erbfamilywellness.com",
   doctor: {
     name: "Dr. David Erb",

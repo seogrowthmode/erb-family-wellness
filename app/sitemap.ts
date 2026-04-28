@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://www.erbfamilywellness.com";
+const BASE_URL = "https://erbfamilywellness.com";
 
 const coppellServiceSlugs = [
   "chiropractic",

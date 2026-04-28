@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Chiropractor Coppell TX - Erb Family Wellness",
   description:
     "Top-rated chiropractor in Coppell, TX. Dr. David Erb -- 28 years, 2012 Olympics. HBOT, SoftWave, thermography, spinal correction. (972) 393-6262.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/coppell" },
+  alternates: { canonical: "https://erbfamilywellness.com/coppell" },
 };
 
 const coppellServices = [
@@ -59,14 +59,14 @@ const faqSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["Chiropractor", "MedicalBusiness"],
-  "@id": "https://www.erbfamilywellness.com/coppell/#location",
+  "@id": "https://erbfamilywellness.com/coppell/#location",
   name: "Erb Family Wellness - Coppell",
   description: "Corrective chiropractic care, HBOT, SoftWave, thermography, and spinal decompression in Coppell, TX. Dr. David Erb -- 28 years, 2012 London Olympics.",
-  url: "https://www.erbfamilywellness.com/coppell/",
+  url: "https://erbfamilywellness.com/coppell/",
   telephone: "(972) 393-6262",
   email: "derb@erbfamilywellness.com",
   foundingDate: "1998",
-  image: "https://www.erbfamilywellness.com/images/erb-family-wellness-office.jpg",
+  image: "https://erbfamilywellness.com/images/erb-family-wellness-office.jpg",
   priceRange: "$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Cash, Credit Card, CareCredit, Insurance",
@@ -90,7 +90,7 @@ const localBusinessSchema = {
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "07:30", closes: "10:30" },
   ],
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "306", bestRating: "5" },
-  parentOrganization: { "@id": "https://www.erbfamilywellness.com/#organization" },
+  parentOrganization: { "@id": "https://erbfamilywellness.com/#organization" },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Chiropractic Services",
@@ -119,8 +119,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.erbfamilywellness.com" },
-    { "@type": "ListItem", position: 2, name: "Coppell", item: "https://www.erbfamilywellness.com/coppell/" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://erbfamilywellness.com" },
+    { "@type": "ListItem", position: 2, name: "Coppell", item: "https://erbfamilywellness.com/coppell/" },
   ],
 };
 

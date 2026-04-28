@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: titleMap[slug] || `${name} Coppell TX`,
     description: `${name} at Erb Family Wellness in Coppell, TX. 28 years of corrective care. Call (972) 393-6262.`,
-    alternates: { canonical: `https://www.erbfamilywellness.com/coppell/${slug}/` },
+    alternates: { canonical: `https://erbfamilywellness.com/coppell/${slug}/` },
   };
 }
 
@@ -89,9 +89,9 @@ export default async function CoppellServicePage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.erbfamilywellness.com" },
-      { "@type": "ListItem", position: 2, name: "Coppell", item: "https://www.erbfamilywellness.com/coppell/" },
-      { "@type": "ListItem", position: 3, name: name, item: `https://www.erbfamilywellness.com/coppell/${slug}/` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://erbfamilywellness.com" },
+      { "@type": "ListItem", position: 2, name: "Coppell", item: "https://erbfamilywellness.com/coppell/" },
+      { "@type": "ListItem", position: 3, name: name, item: `https://erbfamilywellness.com/coppell/${slug}/` },
     ],
   };
 
@@ -101,7 +101,7 @@ export default async function CoppellServicePage({ params }: Props) {
     name,
     provider: {
       "@type": "Chiropractor",
-      "@id": "https://www.erbfamilywellness.com/coppell/#location",
+      "@id": "https://erbfamilywellness.com/coppell/#location",
       name: "Erb Family Wellness - Coppell",
       telephone: "(972) 393-6262",
     },

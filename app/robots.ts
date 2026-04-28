@@ -37,6 +37,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://www.erbfamilywellness.com/sitemap.xml",
+    sitemap: "https://erbfamilywellness.com/sitemap.xml",
   };
 }

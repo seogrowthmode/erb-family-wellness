@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Chiropractor Southlake TX - Erb Family Wellness",
   description:
     "Top-rated chiropractor in Southlake, TX. Dr. David Erb -- 28 years, 2012 Olympics. HBOT, SoftWave, thermography, spinal correction. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake" },
+  alternates: { canonical: "https://erbfamilywellness.com/southlake" },
 };
 
 const southlakeServices = [
@@ -45,14 +45,14 @@ const faqSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["Chiropractor", "MedicalBusiness"],
-  "@id": "https://www.erbfamilywellness.com/southlake/#location",
+  "@id": "https://erbfamilywellness.com/southlake/#location",
   name: "Erb Family Wellness - Southlake",
   description: "Corrective chiropractic care, HBOT, SoftWave, thermography, and spinal decompression in Southlake, TX. Dr. David Erb -- 28 years, 2012 London Olympics. Serving Southlake since 2017.",
-  url: "https://www.erbfamilywellness.com/southlake/",
+  url: "https://erbfamilywellness.com/southlake/",
   telephone: "(817) 895-0075",
   email: "derb@erbfamilywellness.com",
   foundingDate: "2017",
-  image: "https://www.erbfamilywellness.com/images/erb-family-wellness-office.jpg",
+  image: "https://erbfamilywellness.com/images/erb-family-wellness-office.jpg",
   priceRange: "$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Cash, Credit Card, CareCredit, Insurance",
@@ -77,7 +77,7 @@ const localBusinessSchema = {
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "07:30", closes: "10:00" },
   ],
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.6", reviewCount: "105", bestRating: "5" },
-  parentOrganization: { "@id": "https://www.erbfamilywellness.com/#organization" },
+  parentOrganization: { "@id": "https://erbfamilywellness.com/#organization" },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Chiropractic Services",
@@ -99,8 +99,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.erbfamilywellness.com" },
-    { "@type": "ListItem", position: 2, name: "Southlake", item: "https://www.erbfamilywellness.com/southlake/" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://erbfamilywellness.com" },
+    { "@type": "ListItem", position: 2, name: "Southlake", item: "https://erbfamilywellness.com/southlake/" },
   ],
 };
 

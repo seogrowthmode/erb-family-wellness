@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Chiropractor Coppell & Southlake TX | Erb Family Wellness",
   description:
     "Erb Family Wellness — advanced chiropractic care in Coppell & Southlake, TX. 28 years, 2012 Olympics. HBOT, SoftWave, thermography. $67 new patient visit.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/" },
+  alternates: { canonical: "https://erbfamilywellness.com/" },
 };
 
 const homeFAQs = [

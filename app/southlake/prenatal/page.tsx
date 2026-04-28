@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Prenatal Chiropractor Southlake TX - Erb",
   description:
     "Prenatal chiropractor in Southlake, TX. Safe, gentle chiropractic care for expecting mothers. Dr. Kimberly Erb specializes in pregnancy care. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/prenatal" },
+  alternates: { canonical: "https://erbfamilywellness.com/southlake/prenatal" },
 };
 
 const faqs = [
@@ -23,9 +23,9 @@ const faqs = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.erbfamilywellness.com" },
-  { "@type": "ListItem", position: 2, name: "Southlake", item: "https://www.erbfamilywellness.com/southlake/" },
-  { "@type": "ListItem", position: 3, name: "Prenatal Chiropractic", item: "https://www.erbfamilywellness.com/southlake/prenatal/" },
+  { "@type": "ListItem", position: 1, name: "Home", item: "https://erbfamilywellness.com" },
+  { "@type": "ListItem", position: 2, name: "Southlake", item: "https://erbfamilywellness.com/southlake/" },
+  { "@type": "ListItem", position: 3, name: "Prenatal Chiropractic", item: "https://erbfamilywellness.com/southlake/prenatal/" },
 ]};
 
 export default function SouthlakePrenatalPage() {

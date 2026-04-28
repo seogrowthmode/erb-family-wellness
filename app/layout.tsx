@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     title: "Erb Family Wellness | Chiropractor in Coppell & Southlake, TX",
     description:
       "28 years. 2012 London Olympics. The most advanced chiropractic wellness center in DFW. $67 New Patient Special.",
-    url: "https://www.erbfamilywellness.com",
+    url: "https://erbfamilywellness.com",
     siteName: "Erb Family Wellness",
     locale: "en_US",
     type: "website",
   },
   robots: { index: true, follow: true },
-  metadataBase: new URL("https://www.erbfamilywellness.com"),
+  metadataBase: new URL("https://erbfamilywellness.com"),
 };
 
 export default function RootLayout({

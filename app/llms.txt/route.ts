@@ -9,7 +9,7 @@ Erb Family Wellness is a MaxLiving Health Center founded in 1998 by Dr. David Er
 - Coppell Phone: (972) 393-6262
 - Southlake Phone: (817) 895-0075
 - Email: derb@erbfamilywellness.com
-- Website: https://www.erbfamilywellness.com
+- Website: https://erbfamilywellness.com
 - New Patient Special: $67 ($47 prepay)
 
 ## Locations
@@ -17,17 +17,17 @@ Erb Family Wellness is a MaxLiving Health Center founded in 1998 by Dr. David Er
 - Southlake: 1845 E Southlake Blvd, Suite 140, Southlake, TX 76092
 
 ## Services
-- Corrective Chiropractic Care & Spinal Correction: https://www.erbfamilywellness.com/coppell/spinal-correction
-- Hyperbaric Oxygen Therapy (HBOT): https://www.erbfamilywellness.com/coppell/hbot
-- SoftWave Tissue Regeneration Therapy: https://www.erbfamilywellness.com/coppell/softwave
-- Digital Thermography (AlfaSight 9000): https://www.erbfamilywellness.com/coppell/thermography
-- Live Blood Microscopy: https://www.erbfamilywellness.com/coppell/blood-microscopy
-- Spinal Decompression: https://www.erbfamilywellness.com/coppell/spinal-decompression
-- Neuropathy Treatment: https://www.erbfamilywellness.com/coppell/neuropathy
-- Pediatric Chiropractic: https://www.erbfamilywellness.com/coppell/pediatric
-- Prenatal Chiropractic: https://www.erbfamilywellness.com/coppell/prenatal
-- Nutrition Counseling: https://www.erbfamilywellness.com/coppell/nutrition
-- Corrective Exercises: https://www.erbfamilywellness.com/coppell/corrective-exercises
+- Corrective Chiropractic Care & Spinal Correction: https://erbfamilywellness.com/coppell/spinal-correction
+- Hyperbaric Oxygen Therapy (HBOT): https://erbfamilywellness.com/coppell/hbot
+- SoftWave Tissue Regeneration Therapy: https://erbfamilywellness.com/coppell/softwave
+- Digital Thermography (AlfaSight 9000): https://erbfamilywellness.com/coppell/thermography
+- Live Blood Microscopy: https://erbfamilywellness.com/coppell/blood-microscopy
+- Spinal Decompression: https://erbfamilywellness.com/coppell/spinal-decompression
+- Neuropathy Treatment: https://erbfamilywellness.com/coppell/neuropathy
+- Pediatric Chiropractic: https://erbfamilywellness.com/coppell/pediatric
+- Prenatal Chiropractic: https://erbfamilywellness.com/coppell/prenatal
+- Nutrition Counseling: https://erbfamilywellness.com/coppell/nutrition
+- Corrective Exercises: https://erbfamilywellness.com/coppell/corrective-exercises
 
 ## Conditions Treated
 Back Pain, Neck Pain, Sciatica, Headaches, Neuropathy, Scoliosis, Herniated Discs, Sports Injuries, Pediatric Conditions, Prenatal Discomfort, Chronic Pain, Neurological Conditions, Stroke Recovery, Traumatic Brain Injury

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Neuropathy Treatment Southlake TX - Erb",
   description:
     "Neuropathy treatment in Southlake, TX. Restore nerve function without drugs or surgery. HBOT, SoftWave, corrective care. (817) 895-0075.",
-  alternates: { canonical: "https://www.erbfamilywellness.com/southlake/neuropathy" },
+  alternates: { canonical: "https://erbfamilywellness.com/southlake/neuropathy" },
 };
 
 const faqs = [
@@ -23,9 +23,9 @@ const faqs = [
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) };
 const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.erbfamilywellness.com" },
-  { "@type": "ListItem", position: 2, name: "Southlake", item: "https://www.erbfamilywellness.com/southlake/" },
-  { "@type": "ListItem", position: 3, name: "Neuropathy Treatment", item: "https://www.erbfamilywellness.com/southlake/neuropathy/" },
+  { "@type": "ListItem", position: 1, name: "Home", item: "https://erbfamilywellness.com" },
+  { "@type": "ListItem", position: 2, name: "Southlake", item: "https://erbfamilywellness.com/southlake/" },
+  { "@type": "ListItem", position: 3, name: "Neuropathy Treatment", item: "https://erbfamilywellness.com/southlake/neuropathy/" },
 ]};
 
 export default function SouthlakeNeuropathyPage() {
