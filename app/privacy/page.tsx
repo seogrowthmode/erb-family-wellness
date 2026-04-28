@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Erb Family Wellness Coppell TX",
+  title: "Privacy Policy | Coppell TX",
   description:
     "Privacy policy for Erb Family Wellness. How we collect, use, and protect your personal and health information in compliance with HIPAA.",
   alternates: { canonical: "https://erbfamilywellness.com/privacy" },

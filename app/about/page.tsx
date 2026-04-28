@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
-  title: "About Us | Erb Family Wellness Coppell TX",
+  title: "About Us | Coppell TX",
   description:
     "Meet Dr. David & Dr. Kimberly Erb, 2012 Olympic chiropractors in Coppell TX. 28 years of corrective care. Call (972) 393-6262.",
   alternates: { canonical: "https://erbfamilywellness.com/about" },

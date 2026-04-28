@@ -5,7 +5,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "$67 New Patient Special | Erb Family Wellness",
+  title: "$67 New Patient Special",
   description:
     "$67 new patient visit in Coppell TX includes consultation, exam, X-rays & first adjustment. Call (972) 393-6262 to book.",
   alternates: { canonical: "https://erbfamilywellness.com/new-patient" },

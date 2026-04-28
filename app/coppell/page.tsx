@@ -5,7 +5,7 @@ import FormCard from "@/components/FormCard";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Chiropractor Coppell TX - Erb Family Wellness",
+  title: "Chiropractor Coppell TX",
   description:
     "Top-rated chiropractor in Coppell, TX. Dr. David Erb -- 28 years, 2012 Olympics. HBOT, SoftWave, thermography, spinal correction. (972) 393-6262.",
   alternates: { canonical: "https://erbfamilywellness.com/coppell" },

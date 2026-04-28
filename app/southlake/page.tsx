@@ -5,7 +5,7 @@ import FormCard from "@/components/FormCard";
 import FAQ from "@/components/FAQ";
 
 export const metadata: Metadata = {
-  title: "Chiropractor Southlake TX - Erb Family Wellness",
+  title: "Chiropractor Southlake TX",
   description:
     "Top-rated chiropractor in Southlake, TX. Dr. David Erb -- 28 years, 2012 Olympics. HBOT, SoftWave, thermography, spinal correction. (817) 895-0075.",
   alternates: { canonical: "https://erbfamilywellness.com/southlake" },

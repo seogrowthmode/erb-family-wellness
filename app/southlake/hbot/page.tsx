@@ -7,7 +7,7 @@ import PageHero from "@/components/PageHero";
 import StatsBar from "@/components/StatsBar";
 
 export const metadata: Metadata = {
-  title: "HBOT Southlake TX - Erb Family Wellness",
+  title: "HBOT Southlake TX",
   description:
     "Hyperbaric oxygen therapy in Southlake, TX. Breathe 100% oxygen in a pressurized chamber for up to 800% stem cell growth. (817) 895-0075.",
   alternates: { canonical: "https://erbfamilywellness.com/southlake/hbot" },

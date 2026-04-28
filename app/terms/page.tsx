@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | Erb Family Wellness Coppell TX",
+  title: "Terms of Use | Coppell TX",
   description:
     "Terms of use for erbfamilywellness.com. Website disclaimers, medical advice limitations, intellectual property, and user conduct.",
   alternates: { canonical: "https://erbfamilywellness.com/terms" },

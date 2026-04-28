@@ -5,7 +5,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import TestimonialCard from "@/components/TestimonialCard";
 
 export const metadata: Metadata = {
-  title: "Patient Reviews | Erb Family Wellness",
+  title: "Patient Reviews",
   description:
     "306+ five-star reviews for Erb Family Wellness in Coppell TX. See why patients trust Dr. David Erb. Call (972) 393-6262.",
   alternates: { canonical: "https://erbfamilywellness.com/testimonials" },

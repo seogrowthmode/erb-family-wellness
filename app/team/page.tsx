@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 import TestimonialCard from "@/components/TestimonialCard";
 
 export const metadata: Metadata = {
-  title: "Our Team | Erb Family Wellness Coppell TX",
+  title: "Our Team | Coppell TX",
   description:
     "Meet Dr. David Erb (DC, DACNB), Dr. Kimberly Erb & 13 team members. 2012 Olympic chiropractors in Coppell TX. (972) 393-6262.",
   alternates: { canonical: "https://erbfamilywellness.com/team" },

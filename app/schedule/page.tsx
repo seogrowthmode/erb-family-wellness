@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ScheduleClient from "./ScheduleClient";
 
 export const metadata: Metadata = {
-  title: "Book Your $67 New Patient Visit | Erb Family Wellness",
+  title: "Book Your $67 New Patient Visit",
   description:
     "Book your $67 new patient appointment at Erb Family Wellness. Coppell & Southlake TX locations. Call (972) 393-6262 or use our online scheduler.",
   alternates: { canonical: "https://erbfamilywellness.com/schedule" },

@@ -65,14 +65,6 @@ function ScheduleContent() {
 
   return (
     <>
-      <PageHero
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Schedule" }]}
-        titleLight="Schedule Your"
-        titleHeavy="Appointment"
-        subtitle="$67 New Patient Special — Comprehensive consultation, exam, X-rays, and first adjustment."
-        short
-      />
-
       {/* MAIN FORM */}
       <section className="page-section page-section--cream">
         <div className="container-erb">
@@ -236,8 +228,17 @@ function ScheduleContent() {
 
 export default function SchedulePage() {
   return (
-    <Suspense fallback={<div style={{ padding: 80, textAlign: "center" }}>Loading...</div>}>
-      <ScheduleContent />
-    </Suspense>
+    <>
+      <PageHero
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Schedule" }]}
+        titleLight="Schedule Your"
+        titleHeavy="Appointment"
+        subtitle="$67 New Patient Special — Comprehensive consultation, exam, X-rays, and first adjustment."
+        short
+      />
+      <Suspense fallback={<div style={{ padding: 80, textAlign: "center" }}>Loading...</div>}>
+        <ScheduleContent />
+      </Suspense>
+    </>
   );
 }
