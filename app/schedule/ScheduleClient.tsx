@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { trackConversionEvent } from "@/lib/client-tracking";
 
 function ScheduleContent() {
   const router = useRouter();
@@ -52,6 +52,24 @@ function ScheduleContent() {
 
       const result = await res.json();
       if (result.ok && result.redirectPath) {
+        trackConversionEvent("generate_lead", {
+          event_category: "conversion",
+          event_label: "schedule_form_success",
+          form_name: "schedule_form",
+          lead_source: "website",
+          location: data.location,
+          reason: data.reason,
+          value: 67,
+          currency: "USD",
+        });
+        trackConversionEvent("lead_submit_success", {
+          event_category: "conversion",
+          event_label: "lead_forwarded_to_chiroflow",
+          form_name: "schedule_form",
+          lead_source: "website",
+          location: data.location,
+          reason: data.reason,
+        });
         router.push(result.redirectPath);
       } else {
         setError(result.error || "Something went wrong. Please try again.");
@@ -78,7 +96,7 @@ function ScheduleContent() {
                 {error && (
                   <p style={{ color: "#e53e3e", fontSize: 13, marginBottom: 12 }}>{error}</p>
                 )}
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} data-form-name="schedule_form">
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="fname">First Name</label>

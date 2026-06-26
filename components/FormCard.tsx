@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { trackConversionEvent } from "@/lib/client-tracking";
 
 interface FormCardProps {
   subtitle?: string;
@@ -55,6 +56,22 @@ export default function FormCard({
 
       const result = await res.json();
       if (result.ok && result.redirectPath) {
+        trackConversionEvent("generate_lead", {
+          event_category: "conversion",
+          event_label: "form_card_success",
+          form_name: "form_card",
+          lead_source: "website",
+          location: data.location,
+          value: 67,
+          currency: "USD",
+        });
+        trackConversionEvent("lead_submit_success", {
+          event_category: "conversion",
+          event_label: "lead_forwarded_to_chiroflow",
+          form_name: "form_card",
+          lead_source: "website",
+          location: data.location,
+        });
         router.push(result.redirectPath);
       } else {
         setError(result.error || "Something went wrong. Please try again.");
@@ -76,7 +93,7 @@ export default function FormCard({
           <p className="form-card__subtitle">{subtitle}</p>
         </>
       )}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} data-form-name="form_card">
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="fname">First Name</label>

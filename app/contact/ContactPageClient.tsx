@@ -3,6 +3,7 @@
 import { useState } from "react";
 import PageHero from "@/components/PageHero";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { trackConversionEvent } from "@/lib/client-tracking";
 
 export default function ContactPage() {
   const [submitting, setSubmitting] = useState(false);
@@ -47,6 +48,22 @@ export default function ContactPage() {
 
       const result = await res.json();
       if (result.ok) {
+        trackConversionEvent("generate_lead", {
+          event_category: "conversion",
+          event_label: "contact_form_success",
+          form_name: "contact_form",
+          lead_source: "website",
+          location: data.location,
+          value: 67,
+          currency: "USD",
+        });
+        trackConversionEvent("lead_submit_success", {
+          event_category: "conversion",
+          event_label: "lead_forwarded_to_chiroflow",
+          form_name: "contact_form",
+          lead_source: "website",
+          location: data.location,
+        });
         setSubmitted(true);
       } else {
         setError(result.error || "Something went wrong. Please try again.");
@@ -84,7 +101,7 @@ export default function ContactPage() {
                     <p style={{ fontSize: 15, color: "var(--color-text-secondary)" }}>We&rsquo;ll respond within 24 hours.</p>
                   </div>
                 ) : (
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} data-form-name="contact_form">
                   <div className="form-row">
                     <div className="form-group">
                       <label htmlFor="contact-fname">First Name</label>

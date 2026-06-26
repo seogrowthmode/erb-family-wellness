@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ConversionCTA from "@/components/ConversionCTA";
 import GrainOverlay from "@/components/GrainOverlay";
+import Tracking from "@/components/Tracking";
 import "./globals.css";
 
 const inter = Inter({
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={`${inter.variable}`} style={{ fontFamily: "'Inter', sans-serif" }}>
+        <Tracking />
         <GrainOverlay />
         <Header />
         <main>{children}</main>

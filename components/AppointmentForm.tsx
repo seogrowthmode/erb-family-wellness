@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { trackConversionEvent } from "@/lib/client-tracking";
 
 export default function AppointmentForm() {
   const router = useRouter();
@@ -44,8 +45,30 @@ export default function AppointmentForm() {
 
       const result = await res.json();
       if (result.ok && result.redirectPath) {
+        trackConversionEvent("generate_lead", {
+          event_category: "conversion",
+          event_label: "appointment_form_success",
+          form_name: "appointment_form",
+          lead_source: "website",
+          value: 67,
+          currency: "USD",
+        });
+        trackConversionEvent("lead_submit_success", {
+          event_category: "conversion",
+          event_label: "lead_forwarded_to_chiroflow",
+          form_name: "appointment_form",
+          lead_source: "website",
+        });
         router.push(result.redirectPath);
       } else if (result.ok) {
+        trackConversionEvent("generate_lead", {
+          event_category: "conversion",
+          event_label: "appointment_form_success",
+          form_name: "appointment_form",
+          lead_source: "website",
+          value: 67,
+          currency: "USD",
+        });
         router.push("/confirmation");
       } else {
         setError(result.error || "Something went wrong. Please try again.");
@@ -74,7 +97,7 @@ export default function AppointmentForm() {
           or fill out the form below.
         </p>
 
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit} data-form-name="appointment_form">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div>
               <label htmlFor="appt-firstName" className="block text-sm font-medium text-secondary-900">
